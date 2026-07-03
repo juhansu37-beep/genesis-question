@@ -210,6 +210,29 @@ a:hover { text-decoration: underline; }
   border-bottom-color: var(--blue-primary);
   text-decoration: none;
 }
+.nav-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 16px;
+  padding: 9px 13px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--blue-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform .2s, background .2s, border-color .2s;
+}
+.nav-home:hover {
+  transform: translateY(-2px);
+  background: var(--blue-pale);
+  border-color: var(--blue-secondary);
+  text-decoration: none;
+}
 .page-wrap {
   max-width: 860px;
   margin: 0 auto;
@@ -681,6 +704,35 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
   min-width: 20px;
 }
+.series-return-wrap {
+  margin-top: 54px;
+  padding-top: 34px;
+  border-top: 2px solid var(--rule);
+}
+.series-return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 18px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--blue-dark);
+  color: #F0EAD8;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.series-return:hover {
+  transform: translateY(-3px);
+  background: var(--blue-primary);
+  box-shadow: 0 14px 36px rgba(45,95,139,.16);
+  text-decoration: none;
+}
 footer {
   max-width: 860px;
   margin: 0 auto;
@@ -799,6 +851,7 @@ footer {
       <li><a href="#answer">질문에 대한 답</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
+    <a class="nav-home" href="index.html" aria-label="창세기 시리즈 목차로 이동">🏠 목차</a>
   </div>
 </nav>
 
@@ -1119,6 +1172,10 @@ footer {
       <li><span class="ref-num">4</span><span>김성, 「성경과 문화 - 노아 홍수의 흔적을 찾아서」, 가톨릭굿뉴스 자료실. <a href="https://maria.catholic.or.kr/bible/bbs/bbs_view.asp?id=10029&menu=4797" target="_blank" rel="noopener">maria.catholic.or.kr</a></span></li>
     </ol>
   </section>
+
+  <div class="series-return-wrap">
+    <a class="series-return" href="index.html">← 창세기 시리즈 목차로 돌아가기</a>
+  </div>
 
 </main>
 

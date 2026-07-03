@@ -406,6 +406,62 @@
     color: var(--ink-soft);
   }
 
+  .home-top-link {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid rgba(245, 230, 185, .28);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .08);
+    color: var(--gold-light);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform .25s ease, background .25s ease, border-color .25s ease;
+  }
+  .home-top-link:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, .14);
+    border-color: var(--gold-light);
+    text-decoration: none;
+  }
+  .series-return-wrap {
+    max-width: 860px;
+    margin: 44px auto 0;
+    padding: 0 32px;
+  }
+  .series-return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 14px 18px;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--ink);
+    color: var(--parchment);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .series-return:hover {
+    transform: translateY(-3px);
+    background: var(--burgundy);
+    box-shadow: 0 12px 34px rgba(74, 26, 32, .16);
+    text-decoration: none;
+  }
+
   /* ── FOOTER ── */
   footer {
     max-width: 860px;
@@ -422,8 +478,15 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 600px) {
     .cover { padding: 52px 24px 44px; }
+    .home-top-link {
+      top: 14px;
+      right: 14px;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
     .toc-wrap { padding: 24px 20px; }
     .page-body { padding: 0 20px 80px; }
+    .series-return-wrap { padding: 0 20px; }
     .summary-box { padding: 28px 24px; }
     .dual-table { font-size: 13px; }
     .dual-table td, .dual-table thead th { padding: 9px 12px; }
@@ -434,6 +497,7 @@
 
 <!-- ══ COVER ══ -->
 <div class="cover">
+  <a class="home-top-link" href="index.html" aria-label="창세기 시리즈 목차로 이동">🏠 목차</a>
   <p class="cover-series">청년성서모임<br>창세기 3과 궁금증</p>
   <h1>하느님께서 뱀을<br><span>간교하게</span> 창조하셨을까?</h1>
   <p class="cover-ref" style="margin-top:10px;">성경과 가톨릭교회의 가르침으로 살펴보는 창세기 3장</p>
@@ -741,6 +805,10 @@
   </div>
 
 </div><!-- /page-body -->
+
+<div class="series-return-wrap">
+  <a class="series-return" href="index.html">← 창세기 시리즈 목차로 돌아가기</a>
+</div>
 
 <footer>
   <strong>참고자료</strong>
