@@ -274,10 +274,18 @@ button, a {
   text-align: right;
 }
 
+.series-block + .series-block {
+  margin-top: 72px;
+}
+
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.people-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .lesson-card {
@@ -530,7 +538,7 @@ button, a {
 </header>
 
 <main class="page" id="series">
-  <section aria-labelledby="series-title">
+  <section class="series-block" aria-labelledby="series-title">
     <div class="section-header fade-up">
       <div>
         <p class="section-kicker">Genesis Series</p>
@@ -566,6 +574,66 @@ button, a {
           읽기
           <span aria-hidden="true">→</span>
         </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="series-block" aria-labelledby="people-title">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Character Encyclopedia</p>
+        <h2 id="people-title">창세기 인물대백과</h2>
+      </div>
+      <p class="series-note">
+        성경 속 인물의 여정과 배경을 모임에서 바로 나눌 수 있게 정리했습니다.
+      </p>
+    </div>
+
+    <div class="catalog-grid people-grid">
+      <article class="lesson-card fade-up">
+        <span class="lesson-meta">Vol.1</span>
+        <h3>아브라함</h3>
+        <p>
+          믿음의 조상 아브라함의 부르심, 계약, 시험,
+          그리고 인물·장소·용어를 한눈에 살펴봅니다.
+        </p>
+        <a class="lesson-link" href="abraham.html">
+          읽기
+          <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+      <article class="lesson-card fade-up">
+        <span class="lesson-meta">Vol.2</span>
+        <h3>이사악</h3>
+        <p>
+          약속의 아들 이사악의 조용한 순종과 여정,
+          우물 이야기와 계약의 흐름을 함께 살펴봅니다.
+        </p>
+        <a class="lesson-link" href="isaac.html">
+          읽기
+          <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+      <article class="lesson-card is-coming fade-up">
+        <span class="lesson-meta">Vol.3</span>
+        <h3>야곱</h3>
+        <p>
+          도주와 귀환, 씨름과 화해를 거쳐
+          이스라엘이라는 새 이름을 얻는 여정을 살펴봅니다.
+        </p>
+        <span class="soon-label">준비 중</span>
+      </article>
+
+      <article class="lesson-card is-coming fade-up">
+        <span class="lesson-meta">Vol.4</span>
+        <h3>요셉</h3>
+        <p>
+          꿈과 시련, 용서와 화해를 통해
+          한 가족의 구원으로 이어지는 이야기를 살펴봅니다.
+        </p>
+        <span class="soon-label">준비 중</span>
       </article>
     </div>
   </section>

@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>창세기 인물대백과 Vol.1 — 아브라함</title>
+<meta name="description" content="부르심을 따라 믿음의 길을 걸은 성조 아브라함의 여정을 성경 본문을 따라 살펴보는 창세기 인물대백과 Vol.1입니다.">
+<meta property="og:title" content="창세기 인물대백과 Vol.1 — 아브라함">
+<meta property="og:description" content="부르심을 따라 믿음의 길을 걸은 성조 아브라함의 여정을 살펴봅니다.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#1A3D5C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A3D5C'/%3E%3Cpath d='M18 15h20a8 8 0 0 1 8 8v28H24a6 6 0 0 1-6-6V15Z' fill='%23F0EAD8'/%3E%3Cpath d='M25 24h13M25 31h14M25 38h10' stroke='%23B99246' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue-primary: #2D5F8B;
+  --blue-secondary: #4F87B8;
+  --blue-dark: #1A3D5C;
+  --blue-deep: #0D2236;
+  --blue-pale: #EBF3FA;
+  --gold: #D9B44A;
+  --gold-dark: #A07830;
+  --burgundy: #6B1A2A;
+  --bg: #F6F4EF;
+  --bg-card: #FFFFFF;
+  --ink: #1A1410;
+  --ink-mid: #2C2418;
+  --ink-soft: #5A4E42;
+  --rule: #D8D0C0;
+  --rule-light: #ECE8E0;
+  --quote-bg: #F0EAD8;
+  --font-serif: 'Noto Serif KR', Georgia, serif;
+  --font-sans: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --radius: 10px;
+  --shadow: 0 2px 16px rgba(45,95,139,.08);
+  --shadow-hover: 0 18px 40px rgba(45,95,139,.14);
+}
+
+[data-theme="dark"] {
+  --bg: #111820;
+  --bg-card: #1C2530;
+  --ink: #F0EAD8;
+  --ink-mid: #D8CEB8;
+  --ink-soft: #A09880;
+  --rule: #2E3A48;
+  --rule-light: #243040;
+  --quote-bg: #1A2430;
+  --blue-pale: #1A2A3A;
+  --shadow: 0 2px 16px rgba(0,0,0,.3);
+  --shadow-hover: 0 18px 40px rgba(0,0,0,.45);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-weight: 300;
+  line-height: 1.9;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(45,95,139,.035) 1px, transparent 1px) 0 0 / 64px 64px,
+    radial-gradient(circle at 80% 10%, rgba(217,180,74,.13), transparent 34%),
+    radial-gradient(circle at 14% 84%, rgba(45,95,139,.08), transparent 32%);
+}
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  z-index: 9999;
+  background: linear-gradient(90deg, var(--blue-primary), var(--gold));
+  transition: width .12s linear;
+}
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10000;
+  transform: translateY(-150%);
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  color: #F0EAD8;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.cover {
+  min-height: 82vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 96px 28px 88px;
+  color: #F0EAD8;
+  text-align: center;
+  background:
+    linear-gradient(160deg, rgba(13,34,54,.94), rgba(26,61,92,.91) 48%, rgba(45,95,139,.92)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='760' viewBox='0 0 1200 760'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23d9b44a' stop-opacity='.55'/%3E%3Cstop offset='1' stop-color='%23f0ead8' stop-opacity='.18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 608c154-84 277-126 438-95 111 21 183 81 306 71 143-11 230-111 456-73v249H0z' fill='url(%23g)'/%3E%3Cpath d='M164 690c126-88 235-151 373-151 93 0 155 29 229 62 93 42 199 63 334-7' fill='none' stroke='%23f0ead8' stroke-opacity='.25' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='946' cy='132' r='3' fill='%23f0ead8' opacity='.72'/%3E%3Ccircle cx='1010' cy='210' r='2' fill='%23f0ead8' opacity='.62'/%3E%3Ccircle cx='845' cy='184' r='2.5' fill='%23f0ead8' opacity='.68'/%3E%3Ccircle cx='710' cy='120' r='2' fill='%23f0ead8' opacity='.56'/%3E%3C/svg%3E") center bottom / cover no-repeat;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+}
+.cover-inner { width: min(820px, 100%); position: relative; z-index: 1; }
+.cover-mark {
+  width: 74px;
+  height: 74px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(240,234,216,.24);
+  border-radius: 20px;
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 20px 54px rgba(0,0,0,.18);
+  font-size: 34px;
+}
+.cover-series {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.cover h1 {
+  font-size: clamp(38px, 8vw, 82px);
+  font-weight: 700;
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+.cover h1 span { color: var(--gold); }
+.cover-sub {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #C8D8E8;
+  font-family: var(--font-sans);
+  font-size: clamp(16px, 2.8vw, 20px);
+  font-weight: 300;
+  line-height: 1.85;
+}
+.cover-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 34px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+.cover-meta span {
+  padding: 8px 12px;
+  border: 1px solid rgba(240,234,216,.2);
+  border-radius: 999px;
+  color: #F0EAD8;
+  background: rgba(255,255,255,.055);
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(246,244,239,.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+[data-theme="dark"] .sticky-nav { background: rgba(17,24,32,.95); }
+.sticky-nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sticky-nav-inner::-webkit-scrollbar { display: none; }
+.nav-brand {
+  flex: 0 0 auto;
+  padding: 14px 18px 14px 0;
+  border-right: 1px solid var(--rule);
+  color: var(--blue-primary);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nav-links { display: flex; gap: 3px; list-style: none; flex: 0 0 auto; }
+.nav-links a {
+  display: block;
+  padding: 14px 10px 12px;
+  border-bottom: 2px solid transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  transition: color .2s ease, border-color .2s ease;
+  white-space: nowrap;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--blue-primary);
+  border-bottom-color: var(--blue-primary);
+}
+.nav-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--blue-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(45,95,139,.05);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.pill-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 22px rgba(45,95,139,.11);
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 76px 28px 56px;
+}
+.section {
+  margin-bottom: 84px;
+  scroll-margin-top: 76px;
+}
+.section-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--rule);
+}
+.section-kicker {
+  color: var(--gold-dark);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.section h2 {
+  color: var(--ink-mid);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+.section-note {
+  max-width: 360px;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.lead {
+  max-width: 760px;
+  color: var(--ink-mid);
+  font-size: clamp(18px, 3vw, 23px);
+  line-height: 1.9;
+}
+.text-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 24px;
+  align-items: start;
+}
+.body-text p {
+  color: var(--ink-mid);
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 16px;
+}
+.body-text strong { color: var(--ink); font-weight: 700; }
+
+.highlight-box,
+.info-box,
+.quote-box {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.highlight-box {
+  padding: 24px;
+  border: 1px solid rgba(217,180,74,.42);
+  background: linear-gradient(135deg, rgba(217,180,74,.16), rgba(255,255,255,.66));
+}
+[data-theme="dark"] .highlight-box { background: linear-gradient(135deg, rgba(217,180,74,.12), rgba(28,37,48,.72)); }
+.highlight-box strong,
+.info-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue-dark);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+}
+[data-theme="dark"] .highlight-box strong,
+[data-theme="dark"] .info-box strong { color: var(--gold); }
+.highlight-box p,
+.info-box p {
+  color: var(--ink-mid);
+  font-size: 15px;
+  line-height: 1.85;
+}
+.info-box {
+  padding: 22px;
+  border: 1px solid var(--rule-light);
+  background: var(--bg-card);
+}
+.quote-box {
+  position: relative;
+  padding: 30px;
+  border-left: 4px solid var(--gold);
+  background: var(--quote-bg);
+}
+.quote-box p {
+  color: var(--ink-mid);
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 600;
+  line-height: 1.75;
+}
+.quote-box cite {
+  display: block;
+  margin-top: 14px;
+  color: var(--gold-dark);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.card {
+  position: relative;
+  min-height: 172px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-primary), var(--gold));
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(217,180,74,.5);
+  box-shadow: var(--shadow-hover);
+}
+.card-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: var(--blue-pale);
+  font-size: 21px;
+}
+.card h3 {
+  color: var(--ink-mid);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.card p,
+.card li {
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.card ul { list-style: none; display: grid; gap: 5px; }
+.card.wide { grid-column: span 2; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+.fact {
+  padding: 18px;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+.fact span {
+  display: block;
+  color: var(--gold-dark);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.fact strong {
+  color: var(--ink-mid);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 19px;
+  width: 2px;
+  background: linear-gradient(var(--gold), var(--blue-primary));
+}
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 16px;
+}
+.timeline-dot {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(217,180,74,.5);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--blue-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+.timeline-content {
+  padding: 20px 22px;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+.timeline-content h3 {
+  color: var(--ink-mid);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+.timeline-content p {
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.chapter-stack { display: grid; gap: 20px; }
+.chapter-card {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 24px;
+  padding: 26px;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+.chapter-label {
+  color: var(--gold-dark);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.chapter-card h3 {
+  color: var(--ink-mid);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.chapter-card p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+.chapter-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.chapter-points span {
+  padding: 7px 10px;
+  border: 1px solid var(--rule-light);
+  border-radius: 999px;
+  color: var(--blue-primary);
+  background: var(--blue-pale);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.encyclopedia {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.entry {
+  padding: 20px;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+.entry h3 {
+  color: var(--ink-mid);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.entry p {
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.reference-list {
+  display: grid;
+  gap: 10px;
+  counter-reset: refs;
+  list-style: none;
+}
+.reference-list li {
+  position: relative;
+  padding: 16px 18px 16px 48px;
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.reference-list li::before {
+  counter-increment: refs;
+  content: counter(refs);
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue-pale);
+  color: var(--blue-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.return-panel {
+  text-align: center;
+  margin: 42px 0 20px;
+}
+.return-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 18px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--blue-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.return-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: var(--shadow-hover);
+}
+.footer {
+  margin-top: 60px;
+  padding: 34px 0 18px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 13px;
+}
+.footer strong {
+  display: block;
+  color: var(--ink-mid);
+  font-family: var(--font-serif);
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.footer span {
+  display: block;
+  color: var(--gold-dark);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 700;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--blue-primary);
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease, border-color .2s ease;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover { border-color: var(--gold); }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+.fade-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+.fade-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (max-width: 860px) {
+  .cover { min-height: 74vh; padding: 80px 22px 72px; }
+  .sticky-nav-inner { padding: 0 16px; }
+  .nav-actions { margin-left: 0; }
+  .page { padding: 56px 20px 44px; }
+  .section-header { grid-template-columns: 1fr; }
+  .section-note { max-width: none; }
+  .text-grid,
+  .chapter-card { grid-template-columns: 1fr; }
+  .card-grid,
+  .facts,
+  .encyclopedia { grid-template-columns: 1fr; }
+  .card.wide { grid-column: auto; }
+}
+
+@media (max-width: 520px) {
+  .cover h1 { font-size: 42px; }
+  .cover-meta span { width: 100%; }
+  .nav-links a { padding-inline: 8px; }
+  .pill-btn { padding-inline: 11px; }
+  .section { margin-bottom: 64px; }
+  .chapter-card,
+  .card,
+  .highlight-box,
+  .info-box,
+  .quote-box { padding: 20px; }
+  .timeline-item { grid-template-columns: 36px 1fr; gap: 12px; }
+  .timeline::before { left: 17px; }
+  .timeline-dot { width: 36px; height: 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .fade-up, .fade-left, .fade-right { opacity: 1; transform: none; }
+}
+
+@media print {
+  @page { size: A4; margin: 16mm 14mm; }
+  html, body { background: #fff !important; color: #111 !important; font-size: 10.5pt; }
+  body::before, #progress-bar, .sticky-nav, .back-to-top, .return-panel { display: none !important; }
+  .cover {
+    min-height: auto;
+    color: #111 !important;
+    background: #fff !important;
+    padding: 0 0 12mm;
+    border-bottom: 2px solid #B99246;
+  }
+  .cover-mark, .cover-meta { display: none; }
+  .cover h1 { font-size: 30pt; }
+  .cover-sub, .cover-series { color: #333 !important; }
+  .page { max-width: none; padding: 0; }
+  .section { break-inside: avoid; page-break-inside: avoid; margin-bottom: 12mm; }
+  .card, .fact, .entry, .timeline-content, .chapter-card, .highlight-box, .info-box, .quote-box {
+    box-shadow: none !important;
+    border-color: #ddd !important;
+    background: #fff !important;
+    break-inside: avoid;
+  }
+  .card-grid, .facts, .encyclopedia, .text-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111 !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<header class="cover" id="top">
+  <div class="cover-inner fade-up">
+    <div class="cover-mark" aria-hidden="true">✦</div>
+    <p class="cover-series">창세기 인물대백과 Vol.1</p>
+    <h1><span>아브라함</span></h1>
+    <p class="cover-sub">
+      부르심을 따라 믿음의 길을 걸은 성조.<br>
+      아브라함의 여정을 성경 본문을 따라 살펴봅니다.
+    </p>
+    <div class="cover-meta" aria-label="읽기 정보">
+      <span>창세 11,27-25,18</span>
+      <span>부르심 · 계약 · 믿음</span>
+      <span>청년성서모임 자료용</span>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky-nav" aria-label="본문 목차">
+  <div class="sticky-nav-inner">
+    <a class="nav-brand" href="#top">ABRAHAM</a>
+    <ul class="nav-links">
+      <li><a href="#prologue">프롤로그</a></li>
+      <li><a href="#portrait">인물</a></li>
+      <li><a href="#timeline">여정</a></li>
+      <li><a href="#chapters">본문 읽기</a></li>
+      <li><a href="#encyclopedia">대백과</a></li>
+      <li><a href="#notes">해설 팁</a></li>
+      <li><a href="#appendix">부록</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="pill-btn" href="index.html" aria-label="창세기 시리즈 목차로 이동">🏠 목차</a>
+      <a class="pill-btn" href="isaac.html" aria-label="Vol.2 이사악으로 이동">Vol.2 →</a>
+      <button class="pill-btn" id="theme-toggle" type="button" aria-label="어두운 모드 전환">☾</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="page">
+  <section class="section" id="prologue">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Prologue</p>
+        <h2>왜 아브라함인가?</h2>
+      </div>
+      <p class="section-note">아브라함 이야기는 완성된 신앙인의 전기가 아니라, 하느님께서 한 인간을 믿음의 길로 이끄시는 성장의 기록입니다.</p>
+    </div>
+    <div class="text-grid">
+      <div class="body-text fade-left">
+        <p>성경은 아브라함을 ‘믿음의 조상’으로 기억합니다. 그러나 그는 언제나 흔들림 없는 사람이 아니었습니다. 두려움 때문에 아내를 누이라고 말했고, 약속을 기다리지 못해 인간적인 해결책을 선택하기도 했습니다.</p>
+        <p>그럼에도 그는 하느님의 부르심에 응답하여 고향을 떠났고, 불가능해 보이는 약속을 믿었으며, 마침내 아들 이사악을 바치는 시험 앞에서도 하느님께 시선을 두었습니다.</p>
+        <p>그래서 아브라함은 ‘완벽한 모범’보다 더 가까운 인물입니다. 그는 우리처럼 약한 인간이 하느님을 만나며 믿음으로 자라나는 과정을 보여 줍니다.</p>
+      </div>
+      <aside class="highlight-box fade-right">
+        <strong>읽는 순서</strong>
+        <p>먼저 창세기 11,27-25,18 본문을 읽고, 이 페이지의 흐름을 따라가면 아브라함 여정의 큰 구조가 선명해집니다.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="portrait">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Portrait</p>
+        <h2>믿음의 조상, 아브라함</h2>
+      </div>
+      <p class="section-note">이름, 시대, 신앙사적 의미를 먼저 잡으면 본문이 훨씬 잘 읽힙니다.</p>
+    </div>
+    <p class="lead fade-up">아브라함은 셈의 후손이며 테라의 아들, 사라의 남편, 이사악의 아버지입니다. 동시에 이스마엘을 통해 다른 셈족의 선조로도 기억됩니다.</p>
+    <div class="facts fade-up" aria-label="아브라함 핵심 정보">
+      <div class="fact"><span>본문 범위</span><strong>창세 11,26-25,10</strong></div>
+      <div class="fact"><span>출신</span><strong>칼데아의 우르</strong></div>
+      <div class="fact"><span>가족</span><strong>테라 · 사라 · 이사악 · 이스마엘</strong></div>
+      <div class="fact"><span>핵심 주제</span><strong>자손 · 땅 · 이름 · 계약</strong></div>
+    </div>
+    <div class="card-grid" style="margin-top:18px">
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">➊</span>
+        <h3>성조사의 시작</h3>
+        <p>창세기 12장부터는 온 세상의 기원에서 한 가족의 이야기로 초점이 좁혀집니다. 이 가족을 통해 하느님의 구원 계획이 펼쳐집니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">➋</span>
+        <h3>약속의 사람</h3>
+        <p>아브라함 이야기는 자손, 땅, 이름에 대한 약속을 중심으로 전개됩니다. 약속은 즉시 완성되지 않고 기다림 속에서 깊어집니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">➌</span>
+        <h3>세 종교의 기억</h3>
+        <p>유다교, 그리스도교, 이슬람교는 모두 아브라함을 중요한 신앙의 조상으로 기억합니다. 그는 ‘하느님을 믿는 이’의 원형입니다.</p>
+      </article>
+    </div>
+    <div class="card-grid" style="margin-top:18px">
+      <article class="card wide fade-up">
+        <span class="card-icon" aria-hidden="true">א</span>
+        <h3>아브람과 아브라함</h3>
+        <p>창세기 11장 26절부터 17장 4절까지는 주로 ‘아브람’이라는 이름이 쓰입니다. 창세기 17장 5절에서 하느님께서는 계약의 징표로 그의 이름을 ‘아브라함’으로 바꾸어 주십니다.</p>
+        <p>‘아브람’은 ‘아버지는 존귀하시다’라는 뜻으로 이해할 수 있고, ‘아브라함’은 성경 안에서 ‘많은 민족들의 아버지’라는 의미를 부여받습니다. 이름의 변화는 단순한 호칭 변경이 아니라 사명의 변화입니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">🏕</span>
+        <h3>반유목민 지도자</h3>
+        <p>아브라함은 가축과 은과 금이 많은 외국인 거류민이었고, 훈련받은 사람들을 이끌 수 있을 만큼 세력을 가진 인물로 그려집니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">📜</span>
+        <h3>성경의 요약</h3>
+        <p>아브라함의 생애는 창세기 11장 26절부터 25장 10절을 중심으로 전개되며, 사도행전 7장 2-8절에서도 신앙사의 흐름으로 요약됩니다.</p>
+      </article>
+    </div>
+    <div class="card-grid" style="margin-top:18px">
+      <article class="card wide fade-up">
+        <span class="card-icon" aria-hidden="true">📖</span>
+        <h3>성조사는 신앙의 이야기입니다</h3>
+        <p>아브라함·이사악·야곱·요셉의 이야기는 단순한 가족사가 아닙니다. 유배의 시간을 지나던 이스라엘 공동체에게 “하느님께서는 조상들과 함께하셨고 지금도 우리와 함께하신다”는 신앙의 기억을 전해 줍니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">✦</span>
+        <h3>나약함을 숨기지 않습니다</h3>
+        <p>성경은 아브라함의 두려움과 불신, 사라와 하가르 사이의 갈등을 감추지 않습니다. 약한 인간이 하느님을 만나 변화되는 과정을 보여 주기 위해서입니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">🤝</span>
+        <h3>계약이 중심입니다</h3>
+        <p>하느님께서 먼저 약속하시고, 인간의 실수에도 그 약속을 지켜 가십니다. 아브라함 이야기는 계약이 어떻게 삶 속에서 깊어지는지를 따라가는 여정입니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Timeline</p>
+        <h2>아브라함의 생애 한눈에 보기</h2>
+      </div>
+      <p class="section-note">본문의 긴 흐름을 사건별로 따라가면 인물의 변화가 보입니다.</p>
+    </div>
+    <div class="timeline">
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">12</div>
+        <div class="timeline-content">
+          <h3>떠나라: 부르심과 출발</h3>
+          <p>하느님께서는 고향과 친족과 아버지의 집을 떠나 보여 주실 땅으로 가라고 부르십니다. 아브라함은 그 말씀을 따라 길을 떠납니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">12</div>
+        <div class="timeline-content">
+          <h3>시험: 이집트에서 드러난 두려움</h3>
+          <p>기근을 피해 이집트로 내려간 아브람은 사라이를 누이라고 말합니다. 성경은 그의 약함을 숨기지 않고, 그럼에도 사라이를 지키시는 하느님의 개입을 보여 줍니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">13</div>
+        <div class="timeline-content">
+          <h3>갈등: 롯과의 분리</h3>
+          <p>가축이 많아지며 함께 머물 수 없게 되자 아브라함은 롯에게 먼저 선택권을 줍니다. 약속의 땅은 소유가 아니라 신뢰로 받는 선물임이 드러납니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">14</div>
+        <div class="timeline-content">
+          <h3>축복: 멜키체덱과 십일조</h3>
+          <p>살렘 임금 멜키체덱은 빵과 포도주를 가지고 나와 아브람을 축복합니다. 아브람은 가진 것의 십분의 일을 봉헌하며 승리가 하느님의 은총임을 고백합니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">15</div>
+        <div class="timeline-content">
+          <h3>별: 믿음과 계약</h3>
+          <p>하느님께서는 하늘의 별처럼 많은 후손을 약속하십니다. 아브라함은 주님을 믿었고, 주님께서는 그것을 의로움으로 인정해 주십니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">16</div>
+        <div class="timeline-content">
+          <h3>인간적 해결: 하가르와 이스마엘</h3>
+          <p>사라이는 기다림을 견디지 못하고 몸종 하가르를 통해 대를 잇고자 합니다. 광야로 나간 하가르에게도 하느님께서는 이스마엘을 통한 축복을 약속하십니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">17</div>
+        <div class="timeline-content">
+          <h3>이름: 새 계약과 할례</h3>
+          <p>아브람은 아브라함이 되고 사라이는 사라가 됩니다. 이름의 변화는 인생의 방향과 정체성이 하느님 안에서 새로워졌음을 보여 줍니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">18</div>
+        <div class="timeline-content">
+          <h3>웃음: 마므레의 세 손님</h3>
+          <p>더운 대낮, 아브라함은 세 손님을 극진히 맞이합니다. 사라는 아들을 낳으리라는 말씀에 웃지만, 주님께는 너무 어려운 일이 없습니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">19</div>
+        <div class="timeline-content">
+          <h3>중재: 소돔을 위한 전구</h3>
+          <p>아브라함은 의인을 죄인과 함께 쓸어버리시겠느냐고 묻습니다. 쉰 명에서 열 명까지 이어지는 청원은 하느님을 신뢰하는 중재자의 모습을 보여 줍니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">21</div>
+        <div class="timeline-content">
+          <h3>완성: 이사악의 탄생</h3>
+          <p>마침내 약속의 아이 이사악이 태어납니다. ‘웃음’이라는 이름은 불가능해 보였던 약속이 기쁨으로 바뀌는 순간을 기억하게 합니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">22</div>
+        <div class="timeline-content">
+          <h3>모리야: 시험과 봉헌</h3>
+          <p>가장 사랑하는 아들 이사악을 바치라는 시험 앞에서 아브라함은 “하느님께서 손수 마련하실 것”이라고 고백합니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">23</div>
+        <div class="timeline-content">
+          <h3>첫 소유: 막펠라 동굴</h3>
+          <p>사라의 죽음 앞에서 아브라함은 헤브론의 막펠라 동굴을 정식으로 삽니다. 약속의 땅에서 처음 소유한 땅은 삶의 터전이 아니라 사랑하는 이를 묻을 무덤이었습니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">24</div>
+        <div class="timeline-content">
+          <h3>이어짐: 이사악과 레베카</h3>
+          <p>아브라함은 종을 보내 이사악의 배필을 찾게 합니다. 엘리에제르의 기도와 레베카의 응답은 약속이 다음 세대로 이어지는 장면입니다.</p>
+        </div>
+      </article>
+      <article class="timeline-item fade-up">
+        <div class="timeline-dot">25</div>
+        <div class="timeline-content">
+          <h3>마무리: 약속은 이어진다</h3>
+          <p>아브라함은 크투라를 통해서도 후손을 얻고, 175세에 세상을 떠납니다. 이야기는 끝나지만 약속은 이사악과 다음 세대를 통해 계속 이어집니다.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="chapters">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Reading Guide</p>
+        <h2>본문을 따라 읽는 열 장면</h2>
+      </div>
+      <p class="section-note">원고의 세부 흐름을 장면별 카드로 다시 펼쳤습니다. 모임에서는 한 카드씩 나누어 읽어도 좋습니다.</p>
+    </div>
+    <div class="chapter-stack">
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 11,27-17,27</div>
+        <div>
+          <h3>우르에서 하란까지</h3>
+          <p>아브라함의 이야기는 테라의 족보에서 시작됩니다. 테라는 아브람과 사라이, 롯을 데리고 칼데아의 우르를 떠나 가나안을 향하지만 하란에 이르러 그곳에 머뭅니다.</p>
+          <p>유목민에게 이동은 자연스러운 일이었습니다. 그러나 하느님의 부르심이 개입하면서 이 떠남은 단순한 이주가 아니라 신앙의 순례가 됩니다.</p>
+          <div class="chapter-points"><span>우르</span><span>하란</span><span>테라</span><span>순례</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 12,1-9</div>
+        <div>
+          <h3>떠나라</h3>
+          <p>“네 고향과 친족과 아버지의 집을 떠나”라는 말씀은 아브람에게 가장 안정적인 세계를 내려놓으라는 초대였습니다. 아이를 낳지 못하는 사라이, 이미 사람이 살고 있는 가나안 땅, 보이지 않는 미래가 모두 약속의 배경이 됩니다.</p>
+          <p>아브람은 말씀하신 대로 길을 떠납니다. 순명은 불확실한 미래를 하느님과 함께 걷는 여정으로 바꾸어 놓습니다.</p>
+          <div class="chapter-points"><span>창세 12,1-2</span><span>75세</span><span>큰 민족</span><span>복</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 12,6-20</div>
+        <div>
+          <h3>스켐과 베텔, 그리고 이집트</h3>
+          <p>아브람은 스켐의 모레 참나무에 이르러 약속을 듣고 제단을 쌓습니다. 베텔 쪽으로 이동해서도 주님의 이름을 부릅니다. 아무것도 손에 쥔 것이 없지만, 약속을 예배로 기억합니다.</p>
+          <p>그러나 기근이 들자 이집트로 내려가고, 두려움 때문에 사라이를 누이라고 말합니다. 성경은 이기적이고 나약한 아브람을 그대로 보여 주며, 동시에 사라이를 보호하시는 하느님의 손길을 드러냅니다.</p>
+          <div class="chapter-points"><span>제단</span><span>기근</span><span>파라오</span><span>보호하시는 하느님</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 13-14장</div>
+        <div>
+          <h3>롯과의 이별, 멜키체덱의 축복</h3>
+          <p>재산이 많아져 함께 살기 어려워지자 아브람은 롯에게 먼저 선택권을 줍니다. 조카 롯은 대를 이을 가능성이었지만, 아브람은 약속을 자기 방식으로 붙잡지 않습니다.</p>
+          <p>이후 롯을 구출한 아브람은 살렘 임금 멜키체덱에게 축복을 받고 십분의 일을 봉헌합니다. 빵과 포도주를 들고 나온 멜키체덱은 사제직의 원형으로 기억됩니다.</p>
+          <div class="chapter-points"><span>양보</span><span>롯 구출</span><span>살렘</span><span>십일조</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 15-17장</div>
+        <div>
+          <h3>별, 횃불, 새 이름</h3>
+          <p>자식이 없는 아브람에게 하느님께서는 별처럼 많은 후손을 약속하십니다. “아브람이 주님을 믿으니”라는 창세기 15장 6절은 바오로의 의화 신학에서도 중요한 구절이 됩니다.</p>
+          <p>쪼개진 짐승 사이로 타오르는 횃불만 지나가는 계약 장면은 약속의 책임이 하느님께 있음을 보여 줍니다. 창세기 17장에서는 아브람이 아브라함으로, 사라이가 사라로 새 이름을 받으며 할례가 계약의 표징이 됩니다.</p>
+          <div class="chapter-points"><span>창세 15,6</span><span>횃불 계약</span><span>할례</span><span>새 이름</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 16장</div>
+        <div>
+          <h3>하가르와 이스마엘</h3>
+          <p>사라이는 기다림을 견디지 못하고 몸종 하가르를 통해 후손을 얻으려 합니다. 고대 근동에서는 가능한 방식이었지만, 그 선택은 사라이와 하가르 사이의 깊은 상처로 이어집니다.</p>
+          <p>광야로 나간 하가르에게도 하느님의 천사가 찾아옵니다. 이스마엘은 성조사의 중심 인물은 아니지만, 하느님께서는 그를 통해서도 큰 민족을 약속하십니다.</p>
+          <div class="chapter-points"><span>몸종</span><span>광야</span><span>하가르</span><span>이스마엘</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 18-21장</div>
+        <div>
+          <h3>마므레의 웃음과 소돔을 위한 전구</h3>
+          <p>마므레의 참나무 곁에서 아브라함은 세 손님을 극진히 맞이합니다. 사라는 아들을 낳으리라는 말에 웃지만, “너무 어려워 주님이 못 할 일이라도 있다는 말이냐?”라는 말씀이 약속을 다시 세웁니다.</p>
+          <p>아브라함은 소돔을 위해 쉰 명에서 열 명까지 전구합니다. 아비멜렉 사건에서는 다시 사라를 누이라고 말하지만, 하느님께서는 약속의 계획을 지켜 나가시며 아브라함을 예언자로 부르십니다.</p>
+          <div class="chapter-points"><span>세 손님</span><span>사라의 웃음</span><span>전구</span><span>예언자</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 21장</div>
+        <div>
+          <h3>이사악의 탄생과 눈을 여시는 하느님</h3>
+          <p>마침내 약속의 아들 이사악이 태어납니다. ‘그가 웃는다’는 뜻의 이름은 믿을 수 없던 약속이 기쁨으로 바뀐 사건을 품고 있습니다.</p>
+          <p>하가르와 이스마엘은 떠나지만 버려지지 않습니다. 하느님께서 하가르의 눈을 여시자 우물이 보입니다. 이미 있었던 우물이지만, 하느님의 눈뜨게 하심 안에서 비로소 생명의 길이 됩니다.</p>
+          <div class="chapter-points"><span>이사악</span><span>웃음</span><span>브에르 세바</span><span>우물</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 22장</div>
+        <div>
+          <h3>야훼 이레</h3>
+          <p>모리야 산의 시험은 아브라함 이야기의 절정입니다. 이사악은 단순한 아들이 아니라 약속의 살아 있는 표징이기에, 그를 바치라는 말씀은 모든 약속을 내려놓으라는 말처럼 들립니다.</p>
+          <p>아브라함은 “하느님께서 손수 마련해 주실 것이다”라고 답합니다. 숫양이 덤불에 걸려 있는 장면은 하느님께서 우리보다 먼저 마련하시는 분임을 보여 줍니다.</p>
+          <div class="chapter-points"><span>모리야</span><span>이사악</span><span>숫양</span><span>주님께서 마련하신다</span></div>
+        </div>
+      </article>
+      <article class="chapter-card fade-up">
+        <div class="chapter-label">창세 23-25장</div>
+        <div>
+          <h3>막펠라, 레베카, 아브라함의 마지막</h3>
+          <p>사라가 127세에 헤브론에서 세상을 떠나자 아브라함은 막펠라 동굴을 은 사백 닢에 삽니다. 약속의 땅에서 처음 얻은 소유는 정복지가 아니라 무덤입니다.</p>
+          <p>이사악과 레베카의 혼인은 약속이 다음 세대로 이어짐을 보여 줍니다. 아브라함은 늦은 나이에 크투라를 아내로 맞아 드단과 미디안 계열로 이어지는 후손도 얻습니다.</p>
+          <p>그는 175세에 세상을 떠나고, 이사악과 이스마엘이 함께 그를 막펠라 동굴에 안장합니다. 자손도 땅도 없던 사람의 생애가 여러 민족의 기억 속에서 마무리됩니다.</p>
+          <div class="chapter-points"><span>사라 127세</span><span>막펠라</span><span>레베카</span><span>크투라</span><span>175세</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="quote-box fade-up" style="margin-top:24px">
+      <p>“하느님께서 손수 마련하실 것이다.”</p>
+      <cite>창세 22,8 참조</cite>
+    </div>
+  </section>
+
+  <section class="section" id="encyclopedia">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Encyclopedia</p>
+        <h2>인물 · 장소 · 용어 대백과</h2>
+      </div>
+    </div>
+
+    <div class="info-box fade-up" style="margin-bottom:18px">
+      <strong>인물편</strong>
+      <p>아브라함 이야기는 한 사람만의 전기가 아닙니다. 테라, 사라, 롯, 멜키체덱, 엘리에제르, 하가르, 이스마엘, 아비멜렉, 이사악, 크투라가 본문 흐름 안에서 차례로 얽히며 약속과 믿음의 길을 입체적으로 보여 줍니다.</p>
+    </div>
+
+    <div class="encyclopedia" style="margin-bottom:26px">
+      <article class="entry fade-up">
+        <h3>테라</h3>
+        <p>테라는 아브라함의 아버지이며, 나호르와 하란의 아버지이기도 합니다. 그는 아브람과 사라이, 손자 롯을 데리고 칼데아의 우르를 떠나 가나안을 향하지만 하란에 이르러 그곳에 머뭅니다.</p>
+        <p>테라의 이동은 아브라함 여정의 전사처럼 놓입니다. 하란에서 멈춘 가족의 길은 하느님의 부르심을 받은 아브라함에게서 다시 시작됩니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>사라</h3>
+        <p>사라이는 아브라함의 아내이며, 훗날 하느님께 새 이름 ‘사라’를 받습니다. 처음에는 아이를 낳지 못하는 여인으로 소개되지만, 하느님의 약속 안에서 이사악의 어머니가 됩니다.</p>
+        <p>그는 약속을 들으며 웃었고, 그 웃음은 이사악이라는 이름과 연결됩니다. 믿기 어려운 약속 앞에서 터져 나온 웃음이 결국 하느님께서 주시는 기쁨의 표징으로 바뀝니다.</p>
+        <p>사라는 127세에 헤브론에서 세상을 떠나고, 아브라함이 구입한 막펠라 동굴에 안장됩니다. 그의 죽음은 아브라함이 약속의 땅에서 첫 소유지를 얻는 계기가 됩니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>롯</h3>
+        <p>롯은 아브라함의 조카이며, 아버지 하란을 잃은 뒤 테라의 가족과 함께 우르를 떠나 하란, 가나안까지 동행합니다. 아브라함에게 롯은 가족이자 대를 이을 가능성처럼 보였을 인물입니다.</p>
+        <p>그러나 재산이 많아지며 두 집안의 목자들 사이에 다툼이 생기고, 아브라함은 롯에게 먼저 땅을 선택하게 합니다. 롯은 물이 넉넉해 보이는 요르단 들판과 소돔 쪽을 선택합니다.</p>
+        <p>롯은 소돔의 멸망 때 하느님의 자비로 구출되지만, 그의 이야기는 선택의 기준이 무엇이어야 하는지 묻게 합니다. 훗날 그의 후손은 모압족과 암몬족의 조상이 됩니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>멜키체덱</h3>
+        <p>멜키체덱은 살렘 임금이자 지극히 높으신 하느님의 사제로 등장합니다. 그는 빵과 포도주를 가지고 아브람에게 나와 “하늘과 땅을 지으신 분”의 이름으로 축복합니다.</p>
+        <p>그 이름은 ‘정의로운 나의 임금’이라는 뜻으로 이해되며, 살렘은 평화와 연결됩니다. 아브람은 그에게 가진 것의 십분의 일을 봉헌하며 승리가 자기 힘만의 결과가 아님을 고백합니다.</p>
+        <p>구약과 신약 전통에서 멜키체덱은 사제직의 원형으로 읽힙니다. 히브리서는 예수님의 영원한 사제직을 멜키체덱의 계열과 연결해 설명합니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>엘리에제르</h3>
+        <p>엘리에제르는 아브라함의 나이 많은 종으로, 한때 아브라함이 상속자로 생각할 만큼 가까운 사람이었습니다. 그는 창세기 15장에서 이사악보다 먼저 이름이 언급됩니다.</p>
+        <p>창세기 24장의 늙은 종은 이름 없이 등장하지만, 전통적으로 엘리에제르와 연결해 읽기도 합니다. 그는 이사악의 배필을 찾기 위해 아람 나하라임으로 보내지고, 우물가에서 기도하며 하느님의 인도하심을 구합니다.</p>
+        <p>그는 주인공은 아니지만, 약속이 다음 세대로 이어지는 데 결정적인 다리 역할을 합니다. 충직함과 기도로 움직이는 봉사자의 모습이 그의 인물상입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>하가르</h3>
+        <p>하가르는 사라의 이집트인 몸종이며, 이스마엘의 어머니입니다. 사라이는 약속을 기다리지 못하고 하가르를 통해 후손을 얻으려 했고, 그 선택은 세 사람 모두에게 상처가 됩니다.</p>
+        <p>하가르는 광야로 나갔을 때 주님의 천사를 만납니다. 성경은 선택받은 가문 안의 중심 인물만이 아니라, 밀려난 여종의 고통도 하느님께서 들으신다는 사실을 보여 줍니다.</p>
+        <p>브에르 세바 광야에서 절망하던 하가르에게 하느님께서는 우물을 보게 하십니다. 이미 있던 생명의 길이 하느님께서 눈을 열어 주실 때 비로소 보입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>이스마엘</h3>
+        <p>이스마엘은 아브라함과 하가르 사이에서 태어난 아들입니다. 그는 약속의 계보를 잇는 중심 인물은 아니지만, 하느님께서는 그를 버리지 않으시고 큰 민족이 되게 하겠다고 약속하십니다.</p>
+        <p>이사악이 태어난 뒤 하가르와 함께 집을 떠나지만, 광야에서도 하느님의 돌보심 안에 놓입니다. 이스마엘 이야기는 하느님의 자비가 선택받은 가문의 경계 바깥으로도 흘러간다는 것을 보여 줍니다.</p>
+        <p>아브라함이 세상을 떠났을 때 이스마엘은 이사악과 함께 아버지를 막펠라 동굴에 안장합니다. 갈라진 가족의 이야기 끝에 두 아들이 함께 서는 장면은 조용하지만 깊은 울림을 줍니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>아비멜렉</h3>
+        <p>아비멜렉은 그라르의 임금으로, 아브라함과 사라의 이야기에 중요한 외부 인물로 등장합니다. 아브라함은 이집트에서처럼 사라를 누이라고 소개하고, 하느님께서는 꿈을 통해 아비멜렉에게 개입하십니다.</p>
+        <p>이 장면에서 아브라함의 두려움은 다시 드러나지만, 동시에 하느님께서는 약속의 가정을 보호하십니다. 흥미롭게도 하느님께서는 아브라함을 ‘예언자’라고 부르십니다.</p>
+        <p>아비멜렉은 이후 브에르 세바에서 아브라함과 평화로운 계약을 맺습니다. 그의 이야기는 약속의 백성이 주변 민족과 갈등만이 아니라 협약과 공존의 관계도 맺었음을 보여 줍니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>이사악</h3>
+        <p>이사악은 아브라함과 사라 사이에서 태어난 약속의 아들입니다. 그의 이름은 ‘웃음’을 뜻하며, 불가능해 보였던 약속이 실제 기쁨으로 바뀌었음을 기억하게 합니다.</p>
+        <p>모리야 산의 시험에서 이사악은 아브라함 신앙의 절정에 놓입니다. 그는 약속의 살아 있는 표징이었기에, 그를 바친다는 것은 아브라함이 하느님의 약속 전체를 다시 하느님께 맡기는 사건이 됩니다.</p>
+        <p>그리스도교 전통은 모리야의 이사악을 예수님의 수난과 죽음을 미리 비추는 예형으로도 읽어 왔습니다. 약속은 이사악과 레베카를 통해 다음 세대로 이어집니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>크투라</h3>
+        <p>크투라는 사라 이후 아브라함이 맞이한 아내로 소개됩니다. 창세기는 크투라를 통해 태어난 자녀들이 드단과 미디안 등 여러 부족의 조상으로 이어진다고 전합니다.</p>
+        <p>이 대목은 아브라함의 후손이 이사악 한 계보로만 단순하게 닫히지 않는다는 점을 보여 줍니다. 약속의 중심은 이사악에게 이어지지만, 아브라함은 여러 민족의 조상으로 기억됩니다.</p>
+      </article>
+    </div>
+
+    <div class="info-box fade-up" style="margin-bottom:18px">
+      <strong>아브라함의 여정</strong>
+      <p>우르 → 하란 → 스켐 → 베텔과 아이 사이 → 네겝 → 이집트 → 네겝 → 베텔과 아이 사이 → 마므레·헤브론 → 그라르 → 브에르 세바 → 모리야 → 브에르 세바</p>
+      <p>아브라함의 여정은 직선 노선보다 마므레·헤브론과 브에르 세바를 중심으로 여러 차례 오가는 순례 경로에 가깝습니다.</p>
+    </div>
+
+    <div class="info-box fade-up" style="margin-bottom:18px">
+      <strong>장소편</strong>
+      <p>아브라함의 여정은 우르에서 시작해 하란, 가나안, 이집트, 네겝 남부를 오갑니다. 각 장소는 단순한 배경이 아니라 약속이 새겨지는 신앙의 무대입니다.</p>
+    </div>
+
+    <div class="encyclopedia">
+      <article class="entry fade-up">
+        <h3>칼데아의 우르</h3>
+        <p>오늘날 이라크 남부, 유프라테스 강 하류에 있었던 수메르 문명의 중심 도시입니다. 기원전 2000년경 우르는 고대 근동의 큰 도시 가운데 하나였고, 달의 신 난나를 모신 지구라트가 있던 문명 세계였습니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 이라크 남부 유프라테스강 하류 지역의 텔엘무카이야르 유적과 일반적으로 동일시됩니다.</p>
+        <p>아브람이 이곳을 떠났다는 것은 변방에서 중심으로 간 것이 아니라, 익숙한 문명·경제·가족 공동체를 뒤에 두고 말씀의 길로 나섰다는 뜻입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>하란</h3>
+        <p>현재 터키 남동부와 시리아 국경 근처에 위치한 고대 도시입니다. 메소포타미아에서 가나안으로 이어지는 비옥한 초승달 지대의 주요 교역로 위에 있었고, 우르처럼 달의 신을 섬기던 곳이었습니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 튀르키예 남동부, 시리아 국경과 가까운 하란 지역으로 연결됩니다.</p>
+        <p>테라 가족은 가나안을 향해 떠났지만 하란에 머뭅니다. 하란은 ‘잠시 머무는 곳’이 될 수도 있었지만, 하느님의 부르심 뒤에는 방황이 아니라 목적 있는 순례의 출발점이 됩니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>스켐</h3>
+        <p>가나안 중부 산악 지대, 오늘날 나블루스 인근으로 에발 산과 그리짐 산 사이에 자리한 중요한 성소였습니다. 아브람이 가나안에 들어와 처음 이른 곳이 스켐의 모레 참나무 곁입니다.</p>
+        <p><strong>현대 지리</strong> 팔레스타인 서안 지구 나블루스 동쪽의 텔 발라타 유적과 일반적으로 동일시됩니다.</p>
+        <p>성경은 “그때 그 땅에는 가나안족이 살고 있었다”고 덧붙입니다. 약속받은 땅이지만 이미 사람이 살고 있는 땅, 아직 자기 소유가 아닌 땅에서 아브람은 제단을 쌓습니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>베텔</h3>
+        <p>‘하느님의 집’이라는 뜻의 이름을 가진 장소로, 예루살렘 북쪽 산악 지역에 자리합니다. 아브람은 베텔 동쪽, 서쪽으로 베텔이 보이고 동쪽으로 아이가 보이는 곳에서 제단을 쌓고 주님의 이름을 부릅니다.</p>
+        <p><strong>현대 지리</strong> 베텔은 오늘날 예루살렘 북쪽 약 19-23km 지점의 베이틴 일대와 흔히 연결됩니다. 다만 고대 유적의 정확한 위치에는 견해 차이가 있습니다.</p>
+        <p>훗날 야곱이 하늘까지 닿는 사다리 꿈을 꾸고 그곳을 베텔이라 부르며, 성조사의 기억은 세대를 건너 같은 장소에서 다시 울립니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>네겝</h3>
+        <p>히브리어로 ‘남쪽’ 또는 ‘건조한 땅’을 뜻하는 가나안 남부의 반사막 지대입니다. 아브람은 스켐과 베텔을 지나 차츰차츰 네겝 쪽으로 이동합니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 이스라엘 남부의 광범위한 건조 지대를 가리킵니다. 아브라함 여정에서는 가나안 남쪽 이동과 이집트행의 배경이 됩니다.</p>
+        <p>기근이 들자 이집트로 내려가는 흐름도 이 이동 경로와 연결됩니다. 네겝은 약속의 땅을 발로 밟아 익혀 가는 유목민 아브람의 현실적인 이동 무대입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>이집트</h3>
+        <p>가나안에 심한 기근이 들자 아브람이 내려간 곳입니다. 여기서 그는 사라이를 누이라고 말하며 두려움과 나약함을 드러내지만, 하느님께서는 사라이를 보호하십니다.</p>
+        <p><strong>현대 지리</strong> 아브라함이 머문 이집트의 정확한 지역은 알려져 있지 않습니다. 성경의 초점은 지리적 세부보다 기근 속에서 약속이 어떻게 보호되는지에 있습니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>소돔과 고모라</h3>
+        <p>롯이 물이 넉넉해 보이는 요르단 들판을 선택하면서 소돔 이야기가 먼저 열립니다. 이후 소돔은 전쟁, 롯의 위기, 아브라함의 전구, 심판 이야기와 이어집니다.</p>
+        <p>사해 남쪽 지역에 있었던 것으로 추정되는 도시들입니다. 창세기는 이곳을 물이 풍성하고 비옥한 도시이면서도 죄악과 폭력으로 무너진 곳으로 그립니다.</p>
+        <p>소돔의 죄는 성적 타락만이 아니라 나그네를 보호할 권리를 폭력으로 짓밟는 죄와도 연결됩니다. 아브라함이 의인을 위해 전구한 장소라는 점에서, 이 도시는 심판의 이야기인 동시에 중재 기도의 무대입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>마므레</h3>
+        <p>헤브론 북쪽 근교에 위치한 지역으로, 아브라함이 오래 머문 곳입니다. 마므레의 참나무 아래에서 그는 천막을 치고, 더운 대낮에 나타난 세 손님을 맞이합니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 팔레스타인 서안 지구 헤브론 인근과 연결됩니다. 헤브론의 아랍어 명칭은 알칼릴입니다.</p>
+        <p>고대 근동에서 손님을 맞이한다는 것은 손님의 안전까지 책임지는 일이었습니다. 아브라함은 빵과 송아지, 엉긴 젖과 우유로 최대한의 환대를 베풀고, 그 자리에서 이사악 탄생의 약속을 다시 듣습니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>헤브론</h3>
+        <p>예루살렘 남쪽 산지에 자리한 오래된 도시입니다. 아브라함은 헤브론 인근 마므레에 머물렀고, 사라가 127세로 세상을 떠난 곳도 헤브론입니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 팔레스타인 서안 지구의 헤브론, 곧 알칼릴에 해당하며 예루살렘에서 남쪽으로 약 30km 떨어져 있습니다.</p>
+        <p>이곳의 막펠라 동굴은 아브라함이 가나안에서 처음으로 정식 소유한 땅이 됩니다. 헤브론은 첫 소유와 마지막 안식이 함께 놓인 장소입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>살렘</h3>
+        <p>멜키체덱의 도시로, 전통적으로 예루살렘의 고대 이름으로 이해됩니다. 히브리어 ‘샬롬’과 연결되어 평화를 떠올리게 합니다.</p>
+        <p><strong>현대 지리</strong> 살렘은 전통적으로 예루살렘과 연결되어 이해됩니다. 멜키체덱 전승은 훗날 예루살렘과 성전 전통을 읽는 중요한 배경이 됩니다.</p>
+        <p>멜키체덱은 살렘 임금이자 지극히 높으신 하느님의 사제로 등장합니다. 그의 빵과 포도주, 축복은 훗날 히브리서에서 예수님의 영원한 사제직을 설명하는 중요한 배경이 됩니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>그라르</h3>
+        <p>아브라함이 아비멜렉과 만나는 남부 지역입니다. 이곳에서 사라를 누이라고 말하는 사건이 반복되고, 하느님께서는 아비멜렉의 꿈에 개입하여 사라를 보호하십니다.</p>
+        <p><strong>현대 지리</strong> 네겝 북서부와 가자 인근 지역으로 추정되지만 정확한 위치에는 견해 차이가 있습니다. 아브라함 이야기에서는 이방 임금과의 관계, 보호, 평화 계약의 배경으로 중요합니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>브에르 세바</h3>
+        <p>‘브에르’는 우물, ‘세바’는 맹세와 숫자 일곱을 함께 떠올리게 하는 말입니다. 그래서 브에르 세바는 ‘맹세의 우물’ 또는 ‘일곱의 우물’로 읽힙니다.</p>
+        <p><strong>현대 지리</strong> 오늘날 이스라엘 남부 네겝 지역의 베르셰바와 연결됩니다.</p>
+        <p>아브라함과 아비멜렉의 우물 분쟁과 평화 계약, 하가르와 이스마엘이 광야에서 우물을 발견하는 장면이 이 지역과 연결됩니다. 하느님께서 눈을 열어 보게 하시는 생명의 장소입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>모리야</h3>
+        <p>창세기 22장에서 아브라함 이야기의 절정으로 등장하는 장소입니다. 전통적으로 예루살렘 성전 산과 연결되어 이해되어 왔고, 역대기는 솔로몬이 모리야 산에 주님의 집을 지었다고 전합니다.</p>
+        <p><strong>현대 지리</strong> 창세기 본문만으로는 정확한 위치를 확정할 수 없습니다. 후대 성경 전통과 유다교·그리스도교 전통에서는 예루살렘 성전산과 동일시합니다.</p>
+        <p>아브라함은 이곳을 ‘야훼 이레’, 곧 “주님께서 마련해 주신다”라고 부릅니다. 하가르에게 우물을 보게 하신 하느님이 모리야에서는 숫양을 마련해 두신 분으로 드러납니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>막펠라 동굴</h3>
+        <p>헷 사람 에프론에게 은 사백 닢을 주고 산 동굴과 밭입니다. 약속의 땅 전체를 받으리라는 말씀 앞에서, 아브라함이 실제로 처음 소유한 땅은 사랑하는 사라를 묻기 위한 무덤이었습니다.</p>
+        <p>훗날 아브라함과 사라, 이사악과 레베카, 야곱과 레아가 이곳에 안장됩니다. 그래서 막펠라는 성조들의 기억이 모이는 가족의 무덤이자 약속의 첫 표지입니다.</p>
+      </article>
+    </div>
+
+    <div class="info-box fade-up" style="margin:26px 0 18px">
+      <strong>용어편</strong>
+      <p>성조사와 아브라함 이야기를 읽을 때 자주 만나는 핵심 용어입니다. 단어의 뜻을 잡으면 본문의 신학적 흐름이 더 잘 보입니다.</p>
+    </div>
+
+    <div class="encyclopedia">
+      <article class="entry fade-up">
+        <h3>성조</h3>
+        <p>이스라엘 신앙 공동체의 중요한 조상들을 가리킵니다. 아브라함, 이사악, 야곱, 요셉 이야기가 그 중심을 이룹니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>계약</h3>
+        <p>하느님께서 먼저 약속하시고 인간을 관계 안으로 부르시는 신앙의 핵심 언어입니다. 아브라함 이야기의 중심축입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>할례</h3>
+        <p>창세기 17장에서 계약의 표징으로 제시됩니다. 약속이 몸과 삶 전체에 새겨지는 표지입니다.</p>
+      </article>
+      <article class="entry fade-up">
+        <h3>의로움</h3>
+        <p>아브라함이 주님을 믿자 그것이 의로움으로 인정됩니다. 믿음은 단순한 감정이 아니라 하느님께 자신을 맡기는 태도입니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="notes">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Deep Reading</p>
+        <h2>더 깊이 읽는 해설 팁</h2>
+      </div>
+    </div>
+    <div class="card-grid">
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">17</span>
+        <h3>수명에 담긴 상징</h3>
+        <p>아브라함 175세, 이사악 180세, 야곱 147세라는 수명은 단순한 장수 정보만이 아닙니다. 175=(5x5)x7, 180=(6x6)x5, 147=(7x7)x3처럼 각 숫자 배열은 17이라는 합으로 모입니다.</p>
+        <p>여기서 17은 완전수 7과 충만함을 떠올리게 하는 10이 만나는 상징적 수로 읽힙니다. 성조들의 생애가 우연한 시간이 아니라 하느님의 섭리 안에 놓였다는 신학적 읽기입니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">⚖</span>
+        <h3>함무라비 법전과 누지 문헌</h3>
+        <p>하가르를 통한 후계 문제, 상속, 여종, 양자, 계약 관습은 고대 근동 사회의 제도와 맞닿아 있습니다. 함무라비 법전이나 누지 문헌 같은 자료는 이런 관습이 실제 삶의 질서였음을 보여 주는 배경 자료가 됩니다.</p>
+        <p>이 자료들은 성경을 “증명”하기보다, 아브라함 가족이 살던 세계의 공기와 긴장을 이해하게 해 줍니다. 자손과 땅이 왜 그렇게 절박했는지도 더 선명해집니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">🧭</span>
+        <h3>방황과 순례의 차이</h3>
+        <p>우르에서 하란으로, 하란에서 가나안으로 이어지는 길은 겉으로는 유목민의 이동처럼 보입니다. 그러나 하느님의 말씀이 개입하면서 그 이동은 목적 없는 방황이 아니라 약속을 향한 순례가 됩니다.</p>
+        <p>아브라함의 신앙은 한순간의 결심보다 길 위에서 다시 배우는 신뢰에 가깝습니다.</p>
+      </article>
+      <article class="card wide fade-up">
+        <span class="card-icon" aria-hidden="true">✝</span>
+        <h3>신약이 기억한 아브라함</h3>
+        <p>신약성경은 아브라함을 이스라엘 백성의 선조이자 메시아 예수 그리스도의 조상으로 기억합니다. 사도행전은 그의 부르심과 계약을 신앙사의 중요한 출발점으로 요약합니다.</p>
+        <p>동시에 세례자 요한과 바오로는 혈통만으로 아브라함의 참된 후손이 되는 것은 아니라고 말합니다. 그리스도를 믿는 이들이 약속의 축복을 이어 받는 새로운 하느님의 백성으로 이해됩니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="appendix">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Appendix</p>
+        <h2>부록</h2>
+      </div>
+      <p class="section-note">아브라함 이야기가 창세기 성조사 안에서 놓이는 자리를 구조로 정리했습니다.</p>
+    </div>
+    <div class="info-box fade-up" style="margin-bottom:18px">
+      <strong>본문 기준</strong>
+      <p>이 페이지의 중심 본문은 창세기 11장 27절부터 25장 18절까지입니다. 성조사 전체 구조 안에서는 아브라함, 이사악, 야곱, 요셉 이야기로 이어지는 첫 자리입니다.</p>
+    </div>
+    <div class="card-grid">
+      <article class="card wide fade-up">
+        <span class="card-icon" aria-hidden="true">▦</span>
+        <h3>창세기 성조사 구조</h3>
+        <ul>
+          <li><strong>아브라함 이야기</strong> — 창세 11,26-25,10: 부르심, 계약의 심화, 모리야 산의 절정.</li>
+          <li><strong>이사악 이야기</strong> — 창세 25,19-26,35: 약속의 계승과 에사우·야곱 갈등의 시작.</li>
+          <li><strong>야곱 이야기</strong> — 창세 27,1-36,43: 도주와 귀환, 이스라엘이라는 새 이름.</li>
+          <li><strong>요셉 이야기</strong> — 창세 37,1-50,26: 배신과 고난, 화해와 구원.</li>
+        </ul>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">◎</span>
+        <h3>아브라함의 후손</h3>
+        <p>이사악을 통해 히브리 민족의 선조로, 이스마엘과 크투라의 후손들을 통해 다른 셈족 계열의 선조로도 기억됩니다. 그래서 아브라함은 한 가족을 넘어 여러 민족의 기억 속에 놓입니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="return-panel fade-up">
+    <a class="return-link" href="index.html">
+      <span aria-hidden="true">←</span>
+      창세기 시리즈 목차로 돌아가기
+    </a>
+  </div>
+
+  <footer class="footer">
+    <strong>창세기 인물대백과 Vol.1</strong>
+    <span>Abraham · Genesis Character Encyclopedia</span>
+    <p>청년성서모임 궁금증 · © 2026</p>
+  </footer>
+</main>
+
+<button class="back-to-top" id="back-to-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+<script>
+const root = document.documentElement;
+const progressBar = document.getElementById('progress-bar');
+const themeToggle = document.getElementById('theme-toggle');
+const backToTop = document.getElementById('back-to-top');
+const revealTargets = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+const sections = navLinks
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+const savedTheme = localStorage.getItem('abraham-theme');
+if (savedTheme === 'dark' || savedTheme === 'light') {
+  root.dataset.theme = savedTheme;
+} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.dataset.theme = 'dark';
+}
+themeToggle.textContent = root.dataset.theme === 'dark' ? '☀' : '☾';
+
+function updateProgress() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const percent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  progressBar.style.width = `${percent}%`;
+  backToTop.classList.toggle('visible', scrollTop > 520);
+}
+
+function updateActiveNav() {
+  let currentId = sections[0]?.id;
+  sections.forEach(section => {
+    if (section.getBoundingClientRect().top <= 120) currentId = section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+  });
+}
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+revealTargets.forEach(target => revealObserver.observe(target));
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = nextTheme;
+  localStorage.setItem('abraham-theme', nextTheme);
+  themeToggle.textContent = nextTheme === 'dark' ? '☀' : '☾';
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+  updateProgress();
+  updateActiveNav();
+}, { passive: true });
+
+window.addEventListener('resize', updateProgress);
+updateProgress();
+updateActiveNav();
+</script>
+</body>
+</html>
