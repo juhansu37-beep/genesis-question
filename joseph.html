@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>창세기 인물대백과 Vol.4 — 요셉</title>
+<meta name="description" content="악을 선으로 바꾸시는 하느님의 정교한 섭리. 청년성서모임을 위한 창세기 인물대백과 Vol.4입니다.">
+<meta property="og:title" content="창세기 인물대백과 Vol.4 — 요셉">
+<meta property="og:description" content="보이지 않는 손, 숨어 계신 하느님의 역사. 요셉의 생애를 가톨릭 자료를 바탕으로 살펴봅니다.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#1A3D5C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #2D5F8B;
+  --primary-light: #4F87B8;
+  --primary-pale: #EBF3FA;
+  --blue-primary: #2D5F8B;
+  --blue-dark: #1A3D5C;
+  --blue-pale: #EBF3FA;
+  --gold: #D9B44A;
+  --gold-dark: #A07830;
+  --bg: #F6F4EF;
+  --bg-card: #FFFFFF;
+  --ink: #1A1410;
+  --ink-mid: #2C2418;
+  --ink-soft: #5A4E42;
+  --rule: #D8D0C0;
+  --rule-light: #ECE8E0;
+  --quote-bg: #F0EAD8;
+  --font-serif: 'Noto Serif KR', Georgia, serif;
+  --font-sans: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --radius: 10px;
+  --shadow: 0 2px 16px rgba(45,95,139,.08);
+  --shadow-hover: 0 18px 40px rgba(45,95,139,.14);
+}
+[data-theme="dark"] {
+  --bg: #111820; --bg-card: #1C2530;
+  --ink: #F0EAD8; --ink-mid: #D8CEB8; --ink-soft: #A09880;
+  --rule: #2E3A48; --rule-light: #243040;
+  --quote-bg: #1A2430; --blue-pale: #1A2A3A;
+  --primary-pale: #2A1A14;
+  --shadow: 0 2px 16px rgba(0,0,0,.3);
+  --shadow-hover: 0 18px 40px rgba(0,0,0,.45);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  min-height: 100vh; background: var(--bg); color: var(--ink);
+  font-family: var(--font-serif); font-weight: 300; line-height: 1.9;
+  word-break: keep-all; overflow-wrap: break-word; -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(45,95,139,.035) 1px, transparent 1px) 0 0 / 64px 64px,
+    radial-gradient(circle at 75% 8%, rgba(217,180,74,.14), transparent 36%),
+    radial-gradient(circle at 10% 88%, rgba(45,95,139,.08), transparent 32%);
+}
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+#progress-bar {
+  position: fixed; top: 0; left: 0; width: 0%; height: 3px; z-index: 9999;
+  background: linear-gradient(90deg, var(--primary), var(--gold));
+  transition: width .12s linear;
+}
+.skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 10000;
+  transform: translateY(-150%); padding: 10px 14px; border-radius: 8px;
+  background: var(--primary); color: #F0EAD8;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+}
+.skip-link:focus { transform: translateY(0); }
+
+/* ── COVER ── */
+.cover {
+  min-height: 84vh; display: grid; place-items: center;
+  position: relative; overflow: hidden;
+  padding: 96px 28px 88px; color: #F0EAD8; text-align: center;
+  background: linear-gradient(160deg, #0D2236 0%, #1A3D5C 46%, #2D5F8B 100%);
+}
+.cover::before {
+  content: ""; position: absolute; inset: 0; opacity: .45;
+  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M44 40v-5h-4v5h-5v4h5v5h4v-5h5v-4h-5zM8 40v-5H4v5H0v4h4v5h4v-5h5v-4H8zM44 4V0h-4v4h-5v4h5v5h4V8h5V4h-5zM8 4V0H4v4H0v4h4v5h4V8h5V4H8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* 사막 모래 물결 */
+.cover-dunes {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 100px; opacity: .22;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100'%3E%3Cpath d='M0 50 Q240 10 480 50 Q720 90 960 50 Q1200 10 1440 50 L1440 100 L0 100Z' fill='%23D9B44A'/%3E%3C/svg%3E") center bottom / cover no-repeat;
+}
+.cover::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.cover-inner { width: min(820px, 100%); position: relative; z-index: 1; }
+.cover-mark {
+  width: 74px; height: 74px; margin: 0 auto 24px;
+  display: grid; place-items: center;
+  border: 1px solid rgba(240,234,216,.24); border-radius: 20px;
+  background: rgba(255,255,255,.07); box-shadow: 0 20px 54px rgba(0,0,0,.2); font-size: 36px;
+}
+.cover-series {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 18px;
+}
+.cover h1 {
+  font-size: clamp(40px, 9vw, 88px);
+  font-weight: 700; line-height: 1.08; margin-bottom: 12px;
+}
+.cover h1 em { font-style: normal; color: var(--gold); }
+.cover-subtitle {
+  font-size: clamp(16px, 3vw, 21px); color: #C8D8E8;
+  font-family: var(--font-sans); font-weight: 300; line-height: 1.75; margin-bottom: 32px;
+}
+.cover-meta {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 10px; font-family: var(--font-sans); font-size: 12px;
+}
+.cover-meta span {
+  padding: 8px 14px; border: 1px solid rgba(240,234,216,.22);
+  border-radius: 999px; color: #F0EAD8; background: rgba(255,255,255,.06);
+}
+
+/* ── STICKY NAV ── */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 500;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(246,244,239,.95);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+[data-theme="dark"] .sticky-nav { background: rgba(17,24,32,.95); }
+.sticky-nav-inner {
+  max-width: 1080px; margin: 0 auto; display: flex; align-items: center;
+  gap: 14px; padding: 0 24px; overflow-x: auto; scrollbar-width: none;
+}
+.sticky-nav-inner::-webkit-scrollbar { display: none; }
+.nav-brand {
+  flex: 0 0 auto; padding: 14px 18px 14px 0; border-right: 1px solid var(--rule);
+  color: var(--primary); font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; white-space: nowrap;
+}
+.nav-links { display: flex; gap: 3px; list-style: none; flex: 0 0 auto; }
+.nav-links a {
+  display: block; padding: 14px 10px 12px;
+  border-bottom: 2px solid transparent; color: var(--ink-soft);
+  font-family: var(--font-sans); font-size: 12px;
+  transition: color .2s, border-color .2s; white-space: nowrap;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--primary); border-bottom-color: var(--primary); }
+.nav-actions { display: flex; gap: 8px; margin-left: auto; flex: 0 0 auto; }
+.pill-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  min-height: 38px; padding: 8px 13px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: var(--bg-card); color: var(--blue-primary);
+  font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+  cursor: pointer; box-shadow: 0 2px 10px rgba(45,95,139,.05);
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.pill-btn:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 8px 22px rgba(45,95,139,.11); }
+
+/* ── LAYOUT ── */
+.page { max-width: 1080px; margin: 0 auto; padding: 76px 28px 56px; }
+.section { margin-bottom: 84px; scroll-margin-top: 76px; }
+.section-header {
+  display: grid; grid-template-columns: 1fr auto;
+  align-items: end; gap: 20px;
+  margin-bottom: 28px; padding-bottom: 18px;
+  border-bottom: 1px solid var(--rule);
+}
+.section-kicker {
+  color: var(--gold-dark); font-family: var(--font-sans);
+  font-size: 12px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.section h2 { color: var(--ink-mid); font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.25; }
+.section-note { max-width: 360px; color: var(--ink-soft); font-family: var(--font-sans); font-size: 13px; line-height: 1.75; }
+.lead { max-width: 760px; color: var(--ink-mid); font-size: clamp(17px, 2.8vw, 22px); line-height: 1.9; margin-bottom: 32px; }
+.text-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: start; }
+.body-text p { color: var(--ink-mid); font-size: 16px; line-height: 2; margin-bottom: 16px; }
+.body-text strong { color: var(--ink); font-weight: 700; }
+
+/* ── BOX COMPONENTS ── */
+.quote-box {
+  position: relative; padding: 28px 30px;
+  border-left: 4px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--quote-bg); box-shadow: var(--shadow); margin: 24px 0;
+}
+.quote-box p { color: var(--ink-mid); font-size: clamp(17px, 2.8vw, 22px); font-weight: 600; line-height: 1.75; }
+.quote-box cite { display: block; margin-top: 12px; color: var(--gold-dark); font-family: var(--font-sans); font-size: 12px; font-style: normal; letter-spacing: 1px; }
+.info-box { padding: 22px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); box-shadow: var(--shadow); }
+.info-box strong { display: block; margin-bottom: 8px; color: var(--primary); font-family: var(--font-sans); font-size: 13px; font-weight: 700; }
+[data-theme="dark"] .info-box strong { color: var(--gold); }
+.info-box p { color: var(--ink-mid); font-size: 15px; line-height: 1.85; }
+.highlight-box {
+  padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow);
+  border: 1px solid rgba(217,180,74,.42);
+  background: linear-gradient(135deg, rgba(217,180,74,.14), rgba(255,255,255,.66));
+}
+[data-theme="dark"] .highlight-box { background: linear-gradient(135deg, rgba(217,180,74,.10), rgba(28,37,48,.72)); }
+.highlight-box strong { display: block; margin-bottom: 8px; color: var(--primary); font-family: var(--font-sans); font-size: 13px; font-weight: 700; }
+[data-theme="dark"] .highlight-box strong { color: var(--gold); }
+.highlight-box p { color: var(--ink-mid); font-size: 15px; line-height: 1.85; }
+.dark-box {
+  padding: 28px 30px; border-radius: var(--radius);
+  background: linear-gradient(135deg, #0D2236, #1A3D5C);
+  color: #D8EAF8; box-shadow: var(--shadow);
+}
+.dark-box .db-label { font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+.dark-box p { font-size: 15px; line-height: 1.9; color: #C8D8E8; margin-bottom: 12px; }
+.dark-box p:last-child { margin-bottom: 0; }
+.dark-box strong { color: var(--gold); }
+
+/* ── CARDS ── */
+.card-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+.card {
+  position: relative; min-height: 172px; padding: 24px; overflow: hidden;
+  border: 1px solid var(--rule-light); border-radius: var(--radius);
+  background: var(--bg-card); box-shadow: var(--shadow);
+  transition: transform .28s, box-shadow .28s, border-color .28s;
+}
+.card::before {
+  content: ""; position: absolute; inset: 0 0 auto; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--gold));
+}
+.card:hover { transform: translateY(-6px); border-color: rgba(217,180,74,.5); box-shadow: var(--shadow-hover); }
+.card-icon { display: inline-grid; place-items: center; width: 42px; height: 42px; margin-bottom: 14px; border-radius: 12px; background: var(--primary-pale); font-size: 21px; }
+.card h3 { color: var(--ink-mid); font-size: 18px; font-weight: 700; line-height: 1.45; margin-bottom: 8px; }
+.card p { color: var(--ink-soft); font-family: var(--font-sans); font-size: 14px; line-height: 1.75; }
+.card.wide { grid-column: span 2; }
+
+/* ── FACTS ── */
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 28px; }
+.fact { padding: 18px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); box-shadow: var(--shadow); }
+.fact span { display: block; color: var(--gold-dark); font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+.fact strong { color: var(--ink-mid); font-size: 16px; line-height: 1.5; }
+
+/* ── TIMELINE ── */
+.timeline { position: relative; display: grid; gap: 18px; margin-top: 24px; }
+.timeline::before { content: ""; position: absolute; top: 6px; bottom: 6px; left: 19px; width: 2px; background: linear-gradient(var(--primary), var(--gold)); }
+.timeline-item { position: relative; display: grid; grid-template-columns: 46px 1fr; gap: 16px; }
+.timeline-dot { position: relative; z-index: 1; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid rgba(45,95,139,.4); border-radius: 50%; background: var(--bg-card); color: var(--primary); font-family: var(--font-sans); font-size: 12px; font-weight: 700; box-shadow: var(--shadow); }
+.timeline-dot.gold { border-color: rgba(217,180,74,.6); color: var(--gold-dark); }
+.timeline-content { padding: 20px 22px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); box-shadow: var(--shadow); }
+.timeline-content h3 { color: var(--ink-mid); font-size: 17px; font-weight: 700; line-height: 1.45; margin-bottom: 6px; }
+.timeline-content p { color: var(--ink-soft); font-family: var(--font-sans); font-size: 14px; line-height: 1.8; }
+.timeline-content .ref { color: var(--primary); font-weight: 600; }
+
+/* ── CHAPTER STACK ── */
+.chapter-stack { display: grid; gap: 20px; }
+.chapter-card { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 26px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); box-shadow: var(--shadow); }
+.chapter-label { color: var(--gold-dark); font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.chapter-card h3 { color: var(--ink-mid); font-size: 22px; font-weight: 700; line-height: 1.35; margin-bottom: 10px; }
+.chapter-card p { color: var(--ink-soft); font-size: 15px; line-height: 1.9; margin-bottom: 10px; }
+.chapter-card p:last-of-type { margin-bottom: 0; }
+.chapter-points { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chapter-points span { padding: 6px 11px; border: 1px solid var(--rule-light); border-radius: 999px; color: var(--primary); background: var(--primary-pale); font-family: var(--font-sans); font-size: 12px; font-weight: 600; }
+
+/* ── TYPOLOGY TABLE ── */
+.typology { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 0; margin-top: 24px; align-items: stretch; }
+.typo-col { border: 1px solid var(--rule-light); border-radius: var(--radius); overflow: hidden; background: var(--bg-card); box-shadow: var(--shadow); }
+.typo-head { padding: 14px 18px; font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.typo-head.joseph { background: var(--primary); color: #F0EAD8; }
+.typo-head.jesus { background: var(--blue-dark); color: #D8EAF8; }
+.typo-body { padding: 16px 18px; }
+.typo-body ul { list-style: none; display: grid; gap: 8px; }
+.typo-body li { color: var(--ink-soft); font-family: var(--font-sans); font-size: 14px; line-height: 1.7; padding-bottom: 8px; border-bottom: 1px solid var(--rule-light); }
+.typo-body li:last-child { border: none; padding-bottom: 0; }
+.ccc-details { margin-top: 14px; border: 1px solid color-mix(in srgb, var(--gold) 46%, var(--rule-light)); border-radius: 12px; background: color-mix(in srgb, var(--bg-card) 92%, var(--gold-pale)); overflow: hidden; }
+.ccc-details summary { position: relative; padding: 13px 44px 13px 16px; color: var(--gold-dark); font-family: var(--font-sans); font-size: 14px; font-weight: 700; line-height: 1.55; cursor: pointer; list-style: none; transition: background .2s ease; }
+.ccc-details summary::-webkit-details-marker { display: none; }
+.ccc-details summary::after { content: '＋'; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); color: var(--primary); font-size: 20px; font-weight: 400; }
+.ccc-details[open] summary { background: var(--primary-pale); }
+.ccc-details[open] summary::after { content: '−'; }
+.ccc-details summary:hover, .ccc-details summary:focus-visible { background: var(--primary-pale); }
+.ccc-details summary:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+.ccc-text { padding: 16px; border-top: 1px solid var(--rule-light); }
+.ccc-text h4 { margin: 0 0 14px; color: var(--ink-mid); font-size: 18px; line-height: 1.5; }
+.ccc-text p { margin: 0 0 12px; color: var(--ink-soft); font-family: var(--font-serif); font-size: 14px; line-height: 1.8; }
+.ccc-text p:last-of-type { margin-bottom: 12px; }
+.ccc-text strong { color: var(--primary); }
+.ccc-source { color: var(--gold-dark); font-family: var(--font-sans); font-size: 12px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.typo-body li::before { content: '·'; color: var(--gold-dark); font-weight: 700; margin-right: 7px; }
+.typo-mid { display: flex; align-items: center; justify-content: center; padding: 0 4px; }
+.typo-mid-icon { width: 32px; height: 32px; border-radius: 50%; background: var(--gold); display: grid; place-items: center; font-size: 16px; box-shadow: var(--shadow); }
+
+/* ── NUMBER SECTION ── */
+.number-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+.num-card { padding: 26px; border-radius: var(--radius); border: 1px solid var(--rule-light); background: var(--bg-card); box-shadow: var(--shadow); text-align: center; }
+.num-card .num-label { color: var(--gold-dark); font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+.num-card .big-num { font-size: 54px; font-weight: 700; color: var(--ink-mid); line-height: 1; margin-bottom: 4px; }
+.num-card .num-unit { font-family: var(--font-sans); font-size: 12px; color: var(--ink-soft); margin-bottom: 14px; }
+.num-card p { color: var(--ink-soft); font-family: var(--font-sans); font-size: 14px; line-height: 1.8; }
+.num-card strong { color: var(--primary); }
+
+/* ── REFERENCE / NEXT / RETURN ── */
+.reference-list { display: grid; gap: 10px; counter-reset: refs; list-style: none; }
+.reference-list li { position: relative; padding: 16px 18px 16px 48px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); color: var(--ink-soft); font-family: var(--font-sans); font-size: 14px; line-height: 1.75; }
+.reference-list li::before { counter-increment: refs; content: counter(refs); position: absolute; left: 16px; top: 18px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--primary-pale); color: var(--primary); font-size: 11px; font-weight: 700; }
+.series-end {
+  margin-top: 36px; padding: 32px; border-radius: var(--radius);
+  background: linear-gradient(135deg, #0D2236, #1A3D5C 60%, #2D5F8B);
+  color: #F0EAD8; text-align: center; box-shadow: var(--shadow);
+}
+.series-end .se-label { font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; }
+.series-end h3 { font-size: clamp(18px, 3.5vw, 26px); font-weight: 700; color: white; margin-bottom: 16px; line-height: 1.4; }
+.series-end p { font-size: 15px; color: #C8D8E8; line-height: 1.9; max-width: 560px; margin: 0 auto; }
+.series-end strong { color: var(--gold); }
+.return-panel { text-align: center; margin: 42px 0 20px; }
+.return-link {
+  display: inline-flex; align-items: center; gap: 8px; padding: 13px 18px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: var(--bg-card); color: var(--blue-primary);
+  font-family: var(--font-sans); font-size: 14px; font-weight: 700; box-shadow: var(--shadow);
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.return-link:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: var(--shadow-hover); }
+.footer { margin-top: 60px; padding: 34px 0 18px; border-top: 1px solid var(--rule); color: var(--ink-soft); text-align: center; font-family: var(--font-sans); font-size: 13px; }
+.footer strong { display: block; color: var(--ink-mid); font-family: var(--font-serif); font-size: 20px; margin-bottom: 4px; }
+.footer span { display: block; color: var(--gold-dark); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+
+/* ── BACK TO TOP ── */
+.back-to-top { position: fixed; right: 20px; bottom: 20px; z-index: 700; width: 44px; height: 44px; border: 1px solid var(--rule); border-radius: 50%; background: var(--bg-card); color: var(--primary); font-size: 18px; cursor: pointer; box-shadow: var(--shadow); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s, border-color .2s; }
+.back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.back-to-top:hover { border-color: var(--gold); }
+
+/* ── FADE ── */
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s ease; }
+.fade-left { opacity: 0; transform: translateX(-24px); transition: opacity .75s ease, transform .75s ease; }
+.fade-right { opacity: 0; transform: translateX(24px); transition: opacity .75s ease, transform .75s ease; }
+.visible { opacity: 1; transform: translate(0,0); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .cover { min-height: 72vh; padding: 80px 22px 72px; }
+  .page { padding: 56px 20px 44px; }
+  .section-header { grid-template-columns: 1fr; }
+  .section-note { max-width: none; }
+  .text-grid, .chapter-card { grid-template-columns: 1fr; }
+  .card-grid, .facts, .number-row { grid-template-columns: 1fr 1fr; }
+  .card.wide { grid-column: auto; }
+  .typology { grid-template-columns: 1fr; }
+  .typo-mid { display: none; }
+}
+@media (max-width: 520px) {
+  .cover h1 { font-size: 44px; }
+  .section { margin-bottom: 64px; }
+  .card-grid, .facts, .number-row { grid-template-columns: 1fr; }
+  .timeline-item { grid-template-columns: 36px 1fr; gap: 12px; }
+  .timeline::before { left: 17px; }
+  .timeline-dot { width: 36px; height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .fade-up, .fade-left, .fade-right { opacity: 1; transform: none; }
+}
+@media print {
+  @page { size: A4; margin: 16mm 14mm; }
+  body, html { background: #fff !important; color: #111 !important; }
+  #progress-bar, .sticky-nav, .back-to-top, .return-panel, body::before { display: none !important; }
+  .cover { min-height: auto; color: #111 !important; background: #fff !important; padding: 0 0 10mm; border-bottom: 2px solid var(--primary); }
+  .cover-mark, .cover-meta, .cover-dunes { display: none; }
+  .cover h1 { font-size: 28pt; }
+  .page { max-width: none; padding: 0; }
+  .section { break-inside: avoid; margin-bottom: 10mm; }
+  .card, .fact, .timeline-content, .chapter-card, .highlight-box, .info-box, .quote-box { box-shadow: none !important; break-inside: avoid; }
+  .card-grid, .facts { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<!-- ── COVER ── -->
+<header class="cover" id="top">
+  <div class="cover-dunes" aria-hidden="true"></div>
+  <div class="cover-inner fade-up">
+    <div class="cover-mark" aria-hidden="true">🌾</div>
+    <p class="cover-series">창세기 인물대백과 Vol.4</p>
+    <h1><em>요셉</em></h1>
+    <p class="cover-subtitle">
+      악을 선으로 바꾸시는 하느님의 정교한 섭리<br>
+      보이지 않는 손, '숨어 계신 하느님'의 역사
+    </p>
+    <div class="cover-meta">
+      <span>창세 37–50장</span>
+      <span>구덩이에서 이집트 재상으로</span>
+      <span>청년성서모임 자료용</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── STICKY NAV ── -->
+<nav class="sticky-nav" aria-label="본문 목차">
+  <div class="sticky-nav-inner">
+    <a class="nav-brand" href="#top">JOSEPH · Vol.4</a>
+    <ul class="nav-links">
+      <li><a href="#prologue">프롤로그</a></li>
+      <li><a href="#portrait">인물</a></li>
+      <li><a href="#trial">시련</a></li>
+      <li><a href="#chapters">본문 읽기</a></li>
+      <li><a href="#typology">예형론</a></li>
+      <li><a href="#finale">대단원</a></li>
+      <li><a href="#appendix">부록</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="pill-btn" href="index.html" aria-label="창세기 시리즈 목차로 이동">🏠 목차</a>
+      <a class="pill-btn" href="jacob.html" aria-label="Vol.3 야곱으로 이동">← Vol.3</a>
+      <button class="pill-btn" id="theme-toggle" type="button" aria-label="다크 모드 전환">☾</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main id="main" class="page">
+
+  <!-- 프롤로그 -->
+  <section class="section" id="prologue">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Prologue</p>
+        <h2>보이지 않는 손, 숨어 계신 하느님</h2>
+      </div>
+      <p class="section-note">하느님께서 요셉에게 직접 나타나 말씀하시는 장면은 없습니다. 그러나 모든 사건 뒤에서 은밀히 활동하십니다.</p>
+    </div>
+    <div class="text-grid">
+      <div class="body-text fade-left">
+        <p>아브라함과 이사악에게는 하느님께서 직접 나타나 말씀하셨고, 야곱은 베텔의 꿈과 야뽁 강가의 씨름을 통해 하느님을 만났습니다. 그런데 하느님께서 요셉에게 직접 나타나 말씀하시는 장면은 없습니다.</p>
+        <p>그 대신 성경은 반복해서 한 문장을 새깁니다: <strong>"주님께서 그와 함께 계셨다."</strong> 형제들의 시기, 구덩이에 던져짐, 노예로 팔림, 억울한 옥살이 — 이 모든 비극의 사건들 뒤에서 하느님은 은밀히 활동하고 계셨습니다.</p>
+        <p>요셉의 이야기는 창세기를 마무리함과 동시에 탈출기라는 새로운 구원 역사를 향한 <strong>장엄한 가교</strong>가 됩니다. 개인의 비극이 민족의 구원으로 승화되는 이야기입니다.</p>
+      </div>
+      <aside class="highlight-box fade-right">
+        <strong>📖 읽는 방법</strong>
+        <p>창세기 37–50장이 요셉 이야기 전체입니다. 37장(팔림), 39장(포티파르의 집), 41장(파라오의 꿈), 45장(정체 밝힘), 50장(섭리의 고백)을 중심으로 읽으시기를 권합니다.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 인물 -->
+  <section class="section" id="portrait">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Portrait</p>
+        <h2>요셉 — 숨어 계신 하느님의 동행자</h2>
+      </div>
+      <p class="section-note">이름, 핵심 수치, 삶의 구조를 먼저 잡으면 본문이 훨씬 선명해집니다.</p>
+    </div>
+    <p class="lead fade-up">요셉은 야곱이 가장 사랑한 라헬의 첫 아들입니다. 형제들에게 팔려 이집트 노예가 되었지만, 30세에 이집트의 재상이 되어 이집트와 기근에 시달린 주변 사람들의 생명을 구합니다.</p>
+    <div class="facts fade-up" aria-label="요셉 핵심 정보">
+      <div class="fact"><span>본문 범위</span><strong>창세 37–50장</strong></div>
+      <div class="fact"><span>팔릴 당시</span><strong>17세</strong></div>
+      <div class="fact"><span>재상 취임</span><strong>30세</strong></div>
+      <div class="fact"><span>수명</span><strong>110세</strong></div>
+    </div>
+    <div class="card-grid" style="margin-top:18px">
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">👘</span>
+        <h3>긴 저고리의 상징성</h3>
+        <p>야곱이 요셉에게만 입힌 <strong>'긴 저고리'</strong>는 아버지의 특별한 총애와 요셉의 두드러진 지위를 보여 주는 옷으로 읽혀 왔습니다. 이 옷으로 형제들은 요셉에게 '샬롬(정다운 말)' 한마디 건네지 못할 정도로 평화가 깨진 상태가 되었습니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">🌙</span>
+        <h3>미숙한 꿈쟁이에서 지혜로운 해몽가로</h3>
+        <p>요셉은 형들이 자신에게 절하는 꿈을 꾸고 이를 여과 없이 형들에게 말했습니다. 타인의 심정을 헤아리지 못한 미성숙의 표현이었습니다. 그러나 시련을 거친 뒤, 그는 하느님께서 주신 지혜로 파라오의 꿈을 해몽하는 사람이 됩니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">✨</span>
+        <h3>"주님께서 그와 함께 계셨다"</h3>
+        <p>이 문장은 요셉 이야기 전체의 주제 선언입니다(창세 39,2.21.23). 포티파르의 집과 감옥에서 상황이 달라져도 이 문장은 반복됩니다. 하느님의 동행은 환경이 아닌 <strong>인격과 함께</strong> 합니다.</p>
+      </article>
+    </div>
+    <div class="card-grid" style="margin-top:18px">
+      <article class="card wide fade-up">
+        <span class="card-icon" aria-hidden="true">👑</span>
+        <h3>차프낫 파네아 — 이집트에서 받은 새 이름</h3>
+        <p>파라오는 요셉에게 이집트 이름 <strong>'차프낫 파네아(צָפְנַת פַּעְנֵחַ)'</strong>를 주었습니다. 이름의 정확한 뜻은 확정하기 어렵지만, 주석 전통에서는 “하느님께서 말씀하시고 그분께서 살아 계시다”라는 뜻으로 풀이하기도 합니다. 30세에 재상이 된 요셉은 이집트 전역에 대한 권세를 갖게 됩니다.</p>
+      </article>
+      <article class="card fade-up">
+        <span class="card-icon" aria-hidden="true">🍞</span>
+        <h3>7년 풍년과 7년 기근</h3>
+        <p>요셉은 파라오의 꿈(살진 일곱 암소와 흉한 일곱 암소)을 7년 풍년과 7년 기근으로 해몽하고, 대비책을 제시합니다. 이 해몽과 계획이 이집트와 곡식을 구하러 온 주변 사람들의 생명을 지키는 길이 됩니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 시련 -->
+  <section class="section" id="trial">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Trial · 두 번의 구덩이</p>
+        <h2>낮아짐의 연단 — 보르(Bor)의 신학</h2>
+      </div>
+      <p class="section-note">히브리어 '보르(Bor)'는 구덩이를 뜻하며, 요셉은 훗날 감옥을 회상할 때도 이 말을 사용합니다. 가장 낮은 곳이 하느님의 연단 장소가 되었습니다.</p>
+    </div>
+    <div class="quote-box fade-up">
+      <p>"주님께서 요셉과 함께 계시어 그에게 자애를 베푸셨으며, 감옥 소장의 눈에 들게 해 주셨다."</p>
+      <cite>— 창세기 39,21</cite>
+    </div>
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot">①</div>
+        <div class="timeline-content">
+          <h3>도탄의 구덩이 — 첫 번째 보르 <span class="ref">(창세 37장)</span></h3>
+          <p>형들의 안부를 확인하러 간 요셉을 형들은 죽이려다 <strong>'물이 없는 빈 구덩이(보르)'</strong>에 던집니다. 훗날 요셉은 자신이 갇힌 감옥을 회상하면서도 이 말을 사용합니다(창세 40,15). 가장 낮은 곳에서 시작되는 연단의 이미지가 반복됩니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">②</div>
+        <div class="timeline-content">
+          <h3>은전 스무 닢의 역설 <span class="ref">(창세 37,28)</span></h3>
+          <p>요셉은 <strong>은전 스무 닢</strong>에 팔려 갑니다. 이 액수는 후대 레위기의 서원 값 규정에서 5세부터 20세까지의 남자에게 매긴 값과 같습니다(레위 27,5). 하느님의 약속을 받은 이가 값으로 매겨지는 역설입니다. 야곱은 피 묻은 저고리를 보고 "저승으로 내려가겠다"며 통곡합니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">③</div>
+        <div class="timeline-content">
+          <h3>포티파르의 집 — 유혹과 정결 <span class="ref">(창세 39장)</span></h3>
+          <p>이집트 왕실 경호대장 포티파르의 집에서 요셉은 인정받아 가정 총무가 됩니다. "주님께서 그와 함께 계셨다." 그러나 포티파르의 아내가 집요하게 유혹합니다. 요셉의 대답: <strong>"제가 어찌 이런 큰 악을 저지르고 하느님께 죄를 지을 수 있겠습니까?"</strong> 그는 자신의 정결만이 아니라 하느님께 대한 충직성을 지켰습니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">④</div>
+        <div class="timeline-content">
+          <h3>감옥 — 두 번째 보르 <span class="ref">(창세 39–40장)</span></h3>
+          <p>억울하게 감옥에 갇힌 요셉. 그러나 <strong>"주님께서 요셉과 함께 계시어"</strong> 감옥 소장의 눈에 들게 하십니다. 감옥에서 파라오의 술 시종과 빵 굽는 시종의 꿈을 해몽해 주지만, 풀려난 술 시종은 요셉을 잊어버립니다. 2년을 더 기다리게 됩니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot gold">⑤</div>
+        <div class="timeline-content">
+          <h3>파라오의 꿈 — 30세의 재상 <span class="ref">(창세 41장)</span></h3>
+          <p>2년 뒤 파라오가 꿈을 꿉니다. 아무도 해몽하지 못하자 술 시종이 요셉을 기억합니다. 요셉은 파라오 앞에서 고백합니다: <strong>"저는 못 합니다. 하느님께서 파라오에게 평안한 대답을 주실 것입니다."</strong> 해몽 후 파라오는 요셉을 이집트 재상으로 세웁니다. 30세였습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dark-box fade-up" style="margin-top:20px">
+      <p class="db-label">보르(Bor)의 신학</p>
+      <p>구덩이와 감옥을 잇는 '보르'의 이미지는 요셉의 낮아짐을 강조합니다. 하느님께서는 가장 낮은 곳에 있던 요셉을 가장 높은 자리로 이끄십니다. <strong>인간의 눈에는 버려짐이었지만, 그 자리에서도 하느님께서는 함께 계셨습니다.</strong> 과거 아버지를 속여 축복을 가로챘던 야곱은 이제 아들들의 속임으로 통곡하게 되고, 요셉은 그 통곡의 한복판에서 구원의 도구가 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- 본문 읽기 -->
+  <section class="section" id="chapters">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Chapters</p>
+        <h2>본문 읽기 — 장별 구조</h2>
+      </div>
+      <p class="section-note">성경 본문과 함께 읽으세요.</p>
+    </div>
+    <div class="chapter-stack fade-up">
+
+      <div class="chapter-card">
+        <div><p class="chapter-label">창세기 37장</p></div>
+        <div>
+          <h3>꿈쟁이 — 팔린 요셉</h3>
+          <p>야곱은 라헬을 보며 죽은 아내를 떠올려 요셉을 편애합니다. 성경은 라헬과 요셉 모두에게 '몸매와 모습이 아름다웠다'는 동일한 히브리어 표현을 사용합니다. 긴 저고리, 형들을 고자질하는 요셉, 그리고 형들이 자신에게 절하는 꿈을 여과 없이 전하는 미숙함 — 이 모든 것이 형들의 분노에 불을 지핍니다.</p>
+          <p>형들은 요셉을 구덩이에 던지고, 은전 스무 닢에 이스마엘 상인들에게 팝니다. 피 묻은 저고리를 야곱에게 보내 아들의 죽음을 위장합니다.</p>
+          <div class="chapter-points"><span>긴 저고리</span><span>꿈의 미숙함</span><span>은전 스무 닢</span></div>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div><p class="chapter-label">창세기 39장</p></div>
+        <div>
+          <h3>포티파르의 집 — 정결과 억울함</h3>
+          <p>이집트에서 포티파르의 노예가 된 요셉. "주님께서 그와 함께 계시어" 그가 하는 일마다 잘 됩니다. 포티파르는 요셉을 신뢰하여 가정 총무로 세웁니다. 그런데 포티파르의 아내가 날마다 요셉을 유혹합니다. 요셉은 거절합니다: "내가 어떻게 하느님께 죄를 지을 수 있겠습니까?"</p>
+          <p>아내는 누명을 씌우고, 요셉은 감옥에 갇힙니다. 그러나 감옥에서도 "주님께서 요셉과 함께 계셨습니다."</p>
+          <div class="chapter-points"><span>주님께서 함께 계셨다</span><span>정결의 신학</span><span>억울한 감옥</span></div>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div><p class="chapter-label">창세기 41장</p></div>
+        <div>
+          <h3>파라오의 꿈 — 30세의 재상</h3>
+          <p>파라오가 두 개의 꿈을 꿉니다. 살진 암소 일곱 마리와 흉한 암소 일곱 마리, 통통한 이삭 일곱 개와 여윈 이삭 일곱 개. 이집트의 모든 마술사와 현인이 해몽하지 못하자, 술 시종이 감옥의 요셉을 기억합니다.</p>
+          <p>요셉은 파라오 앞에서 먼저 고백합니다: "저는 못 합니다. 하느님께서 평안한 대답을 주실 것입니다." 해몽 후 파라오는 선언합니다: "이 사람과 같이 하느님의 영이 깃든 사람이 또 있겠느냐?" 요셉은 30세에 이집트 재상이 됩니다.</p>
+          <div class="chapter-points"><span>하느님의 영</span><span>7년 풍년·기근</span><span>30세 재상</span></div>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div><p class="chapter-label">창세기 42–44장</p></div>
+        <div>
+          <h3>형들과의 재회 — 유다의 변화</h3>
+          <p>기근이 가나안까지 닥치자 야곱은 열 아들을 이집트로 보냅니다. 요셉은 형들을 알아보지만 형들은 모릅니다. 요셉은 형들이 변했는지 시험합니다. 막내 베냐민을 데려오게 하고, 이후 베냐민의 자루에 은잔을 숨겨 그를 종으로 삼겠다고 선언합니다.</p>
+          <p>그때 <strong>유다</strong>가 나섭니다. 과거 요셉을 팔자고 제안했던 유다가 이제 말합니다: <strong>"저 아이 대신 나를 종으로 삼아 주십시오."</strong> 이 대속적 사랑이 요셉 이야기 전체의 진정한 정점입니다.</p>
+          <div class="chapter-points"><span>베냐민</span><span>유다의 대속</span><span>형들의 변화</span></div>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div><p class="chapter-label">창세기 45장</p></div>
+        <div>
+          <h3>정체를 밝히다 — 섭리의 고백</h3>
+          <p>유다의 간청에 요셉은 더 이상 참지 못하고 정체를 밝힙니다. 형들은 두려워합니다. 요셉이 말합니다: <strong>"나를 이곳으로 보낸 것은 형님들이 아니라 하느님이십니다."</strong></p>
+          <p>이것이 요셉 이야기 전체의 신학적 핵심입니다. 인간의 악행조차 생명을 구하는 도구로 선용하시는 하느님의 오묘한 섭리. 형들의 시기와 배신이, 이집트 전체와 가나안 가족을 구원하는 통로가 되었습니다.</p>
+          <div class="chapter-points"><span>섭리의 고백</span><span>악을 선으로</span><span>용서와 화해</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 예형론 -->
+  <section class="section" id="typology">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Typology · 예형론</p>
+        <h2>요셉 — 예수 그리스도의 예표</h2>
+      </div>
+      <p class="section-note">교부 전통에서 요셉의 삶은 예수 그리스도를 예표(豫表)하는 인물로 읽혀 왔습니다.</p>
+    </div>
+    <div class="info-box fade-up">
+      <strong>📌 예형론(Typology)이란?</strong>
+      <p>구약의 인물·사건·제도를 신약의 빛 안에서 읽는 성경 해석 방법입니다. 교회는 이 예형론을 통해 두 계약 안에 담긴 하느님 계획의 단일성을 읽으며, 동시에 구약이 지닌 고유한 계시 가치도 존중합니다. 아래 비교는 교리서가 개별 항목을 확정한 목록이 아니라, 요셉을 그리스도의 예표로 읽어 온 전통에 따른 묵상적 대조입니다.</p>
+      <details class="ccc-details">
+        <summary>가톨릭교회교리서 128–130항 한국어 원문 펼쳐 보기</summary>
+        <div class="ccc-text">
+          <h4>구약 성경과 신약 성경의 단일성</h4>
+          <p><strong>128.</strong> 교회는 이미 사도들 시대에(107) 그리고 그 후에도 성전(聖傳) 안에서 일관되게 예형론(typologia)에 의거하여 신·구약에서 하느님 계획의 단일성을 천명해 왔다. 예형론은, 때가 찼을 때 강생하신 당신 아드님의 인격 안에서 이루신 일들의 예형(豫形)을 구약의 하느님의 업적에서 식별해 낸다.</p>
+          <p><strong>129.</strong> 그러므로 그리스도인들은 돌아가시고 부활하신 그리스도에 비추어 구약 성경을 읽는다. 이러한 예형론적인 성경 읽기는 구약 성경의 고갈되지 않는 내용을 명백히 드러낸다. 그러나 이 때문에, 나중에 우리 주님께서 친히 재확인해 주셨듯이, 구약 성경이 자신의 고유한 계시의 가치를 지니고 있다는 사실을 망각해서는 안 된다.(108) 한편 신약 성경 역시 구약 성경에 비추어 읽어야 한다. 초기 그리스도교의 교리 교육은 끊임없이 구약 성경을 활용하였다.(109) 옛 격언에 따르면 “신약은 구약에 감추어져 있으며 구약은 신약 안에서 드러난다”(In Vetere Novum lateat et in Novo Vetus pateat).(110)</p>
+          <p><strong>130.</strong> 예형론은 “하느님께서 모든 것 안에서 모든 것이 되실”(1코린 15,28) 때 이루어질 하느님 계획의 완성을 향한 역동적인 순간을 가리킨다. 그러나 예를 들어 성조들에 대한 부르심이나 이집트 탈출 사건이 하느님 계획의 중간 단계라고 해서, 하느님 계획에서 그 고유한 가치를 잃지는 않는다.</p>
+          <a class="ccc-source" href="https://maria.catholic.or.kr/dictionary/doctrine/doctrine_view.asp?menu=doctrine&amp;seq=5187&amp;level1=1&amp;level2=1&amp;level3=2&amp;level4=3&amp;level5=0&amp;level6=4&amp;level7=3&amp;lang=ko&amp;topkey=128" target="_blank" rel="noopener noreferrer">가톨릭 굿뉴스 한국어 원문에서 확인 ↗</a>
+        </div>
+      </details>
+    </div>
+    <div class="typology fade-up" style="margin-top:20px">
+      <div class="typo-col">
+        <div class="typo-head joseph">요셉 (창세 37–50장)</div>
+        <div class="typo-body">
+          <ul>
+            <li>아버지가 가장 사랑한 아들</li>
+            <li>형제들에게 배신당하고 팔림 (은전 20닢)</li>
+            <li>이방인에게 넘겨짐</li>
+            <li>옷이 벗겨짐 (저고리)</li>
+            <li>구덩이·감옥에 갇힘</li>
+            <li>30세에 통치 시작</li>
+            <li>많은 사람을 기근에서 구원함</li>
+            <li>형들을 용서하고 화해함</li>
+          </ul>
+        </div>
+      </div>
+      <div class="typo-mid" aria-hidden="true">
+        <div class="typo-mid-icon">→</div>
+      </div>
+      <div class="typo-col">
+        <div class="typo-head jesus">예수 그리스도 (신약)</div>
+        <div class="typo-body">
+          <ul>
+            <li>하느님 아버지의 사랑하시는 외아들</li>
+            <li>제자에게 배신당하고 팔림 (은전 30닢)</li>
+            <li>이방인 총독에게 넘겨짐</li>
+            <li>옷이 벗겨짐 (십자가 위에서)</li>
+            <li>무덤에 갇힘</li>
+            <li>30세에 공생활 시작</li>
+            <li>온 인류를 죄에서 구원함</li>
+            <li>인류를 용서하고 화해시킴</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box fade-up" style="margin-top:20px">
+      <strong>유다의 변화 — 또 하나의 예형</strong>
+      <p>요셉 서사의 중요한 전환점은 <strong>유다의 변화</strong>입니다. 과거 요셉을 팔자고 제안했던 유다가 이제 베냐민을 대신하여 자신이 종이 되겠다고 나섭니다. 유다 지파에서 예수 그리스도가 태어났다는 사실과 함께 읽을 때, 그 자기희생의 의미를 묵상할 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- 대단원 -->
+  <section class="section" id="finale">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Finale · 창세기를 닫으며</p>
+        <h2>탈출기를 여는 유언</h2>
+      </div>
+      <p class="section-note">요셉의 마지막 말은 창세기를 닫으며 이집트 탈출과 약속의 땅 귀환을 미리 내다봅니다.</p>
+    </div>
+    <div class="quote-box fade-up">
+      <p>"나를 이곳으로 보낸 것은 형님들이 아니라 하느님이십니다."</p>
+      <cite>— 창세기 45,8 | 섭리의 최종 고백</cite>
+    </div>
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot">고</div>
+        <div class="timeline-content">
+          <h3>고센 땅의 섭리 <span class="ref">(창세 46–47장)</span></h3>
+      <p>요셉은 가족이 목축에 적합한 <strong>고센</strong> 땅에 자리 잡도록 주선합니다. 이곳에서 야곱의 가족은 이집트인들과 구별된 공동체로 성장하고, 훗날 탈출기의 무대가 마련됩니다. 하느님의 섭리는 세대를 넘어 이어집니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">70</div>
+        <div class="timeline-content">
+          <h3>70명과 75명 — 두 본문 전통 <span class="ref">(창세 46,27 · 사도 7,14)</span></h3>
+          <p>히브리 말 본문은 이집트로 내려간 야곱의 집안을 <strong>70명</strong>으로 정리합니다. 칠십인역과 이를 따르는 사도행전 7장 14절은 요셉의 후손 다섯을 더하여 <strong>75명</strong>으로 전합니다. 이는 같은 가족 전승이 서로 다른 본문 전통 안에서 보존되었음을 보여 줍니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot gold">유</div>
+        <div class="timeline-content">
+          <h3>110세의 유언 — 창세기를 닫다 <span class="ref">(창세 50,24-25)</span></h3>
+          <p>요셉은 110세에 숨을 거두며 마지막 말을 남깁니다: <strong>"하느님께서 반드시 여러분을 돌보실 것입니다. 그러면 여러분은 내 유골을 이곳에서 가지고 올라가십시오."</strong></p>
+          <p>이집트 지혜 문학에서 110세는 인간의 이상적인 수명으로 여겨졌습니다. 요셉의 유언은 창세기를 닫으며 이집트 탈출과 약속의 땅 귀환을 미리 내다봅니다. 모세는 이스라엘이 이집트를 떠날 때 요셉의 유골을 가지고 나옵니다(탈출 13,19).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 부록 -->
+  <section class="section" id="appendix">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-kicker">Appendix</p>
+        <h2>부록 — 상징수로 읽는 성조 이야기</h2>
+      </div>
+      <p class="section-note">성경에 기록된 수명을 하나의 상징적 관점에서도 살펴봅니다.</p>
+    </div>
+    <div class="number-row fade-up">
+      <div class="num-card">
+        <p class="num-label">두 본문 전통</p>
+        <p class="big-num">70 / 75</p>
+        <p class="num-unit">히브리 말 본문 / 칠십인역·사도행전</p>
+        <p>야곱 집안의 수를 서로 다르게 전하는 두 본문 전통입니다. 어느 한쪽을 상징 계산으로 단정하기보다 전승의 차이를 함께 살펴봅니다.</p>
+      </div>
+      <div class="num-card">
+        <p class="num-label">요셉의 수명</p>
+        <p class="big-num">110</p>
+        <p class="num-unit">세</p>
+        <p>이집트 지혜 문학에서 <strong>인간의 이상적인 수명</strong>으로 여겨졌습니다. 요셉의 생애가 이집트적 배경 속에서 충만하게 마무리됨을 보여 줍니다.</p>
+      </div>
+    </div>
+    <div class="series-end fade-up">
+      <p class="se-label">창세기 인물대백과 · 完</p>
+      <h3>아브라함 → 이사악 → 야곱 → 요셉</h3>
+      <p>한 사람의 부르심에서 시작된 약속은 네 세대를 거쳐 <strong>하나의 큰 집안 공동체</strong>로 자랐습니다. 창세기는 여기서 끝나지 않습니다. 모세는 이스라엘이 이집트를 떠날 때 요셉의 유골을 가지고 나오고, 하느님의 약속은 약속의 땅을 향해 계속 이어집니다.</p>
+    </div>
+  </section>
+
+  <div class="return-panel fade-up">
+    <a class="return-link" href="index.html">
+      <span aria-hidden="true">←</span>
+      창세기 시리즈 목차로 돌아가기
+    </a>
+  </div>
+
+  <footer class="footer">
+    <strong>창세기 인물대백과 Vol.4</strong>
+    <span>Joseph · Genesis Character Encyclopedia · 完</span>
+    <p>청년성서모임 궁금증 · © 2026</p>
+  </footer>
+</main>
+
+<button class="back-to-top" id="back-top" aria-label="맨 위로 이동">↑</button>
+
+<script>
+(function () {
+  'use strict';
+  const bar = document.getElementById('progress-bar');
+  const backTop = document.getElementById('back-top');
+  const themeBtn = document.getElementById('theme-toggle');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('.section[id]');
+  const fadeTargets = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+
+  function updateBar() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = max > 0 ? (window.scrollY / max * 100) + '%' : '0%';
+  }
+  function updateBackTop() { backTop.classList.toggle('visible', window.scrollY > 400); }
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  function updateNav() {
+    let current = '';
+    sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 100) current = sec.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  }
+  const saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') themeBtn.textContent = '☀︎';
+  themeBtn.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    themeBtn.textContent = isDark ? '☾' : '☀︎';
+  });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.09, rootMargin: '0px 0px -6% 0px' });
+  fadeTargets.forEach(t => observer.observe(t));
+  window.addEventListener('scroll', () => { updateBar(); updateBackTop(); updateNav(); }, { passive: true });
+  updateBar(); updateBackTop();
+})();
+</script>
+</body>
+</html>
