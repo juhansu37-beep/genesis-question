@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>창세기 9과 — 야곱의 열 두 아들</title>
-<meta name="description" content="창세기 9과 야곱의 열 두 아들. 야곱의 네 아내와 열두 아들의 이름, 뜻, 가계도, 이스라엘 열두 지파의 시작을 시각적으로 살펴봅니다.">
-<meta property="og:title" content="창세기 9과 — 야곱의 열 두 아들">
+<title>창세기 9과 — 야곱의 열두 아들</title>
+<meta name="description" content="창세기 9과 야곱의 열두 아들. 네 어머니와 열두 아들의 이름, 뜻, 가계도, 이스라엘 열두 지파의 시작을 시각적으로 살펴봅니다.">
+<meta property="og:title" content="창세기 9과 — 야곱의 열두 아들">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta name="theme-color" content="#1A3D5C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&amp;family=Noto+Sans+KR:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #F6F4EF;
@@ -57,9 +57,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  background: var(--bg); color: var(--ink);
+  min-height: 100vh; background: var(--bg); color: var(--ink);
   font-family: var(--font-serif); font-weight: 300; line-height: 1.9;
-  word-break: keep-all; -webkit-font-smoothing: antialiased;
+  word-break: keep-all; overflow-wrap: break-word; -webkit-font-smoothing: antialiased;
 }
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
@@ -68,7 +68,14 @@ body::before {
     radial-gradient(circle at 80% 5%, rgba(217,180,74,.12), transparent 38%);
 }
 a { color: inherit; text-decoration: none; }
-button { -webkit-tap-highlight-color: transparent; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 10000;
+  transform: translateY(-150%); padding: 10px 14px; border-radius: 8px;
+  background: var(--jacob); color: #F0EAD8;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+}
+.skip-link:focus { transform: translateY(0); }
 
 /* ── PROGRESS ── */
 #progress-bar {
@@ -337,19 +344,43 @@ button { -webkit-tap-highlight-color: transparent; }
 .leg-dot.bilhah { background: var(--bilhah); }
 .leg-dot.zilpah { background: var(--zilpah); }
 .leg-dot.rachel { background: var(--rachel); }
+.tribe-transition { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; margin-bottom: 28px; }
+.transition-card { min-height: 92px; display: grid; place-items: center; padding: 18px; border: 1px solid var(--rule-light); border-radius: var(--radius); background: var(--bg-card); color: var(--ink-mid); box-shadow: var(--shadow); text-align: center; }
+.transition-card strong { display: block; font-size: clamp(18px, 3vw, 25px); line-height: 1.4; }
+.transition-card span { display: block; margin-top: 4px; color: var(--gold-dark); font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+.transition-card.destination { border-color: rgba(217,180,74,.55); background: linear-gradient(135deg, var(--quote-bg), var(--bg-card)); }
+.transition-arrow { color: var(--gold-dark); font-family: var(--font-sans); font-size: 28px; font-weight: 700; }
+.tribe-note { margin: -12px 0 24px; padding: 16px 18px; border-left: 4px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; background: var(--quote-bg); color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
-  .wives-row { grid-template-columns: repeat(2, 1fr); }
-  .wives-row::before { left: calc(25% + 8px); right: calc(25% + 8px); }
+  .wives-row { grid-template-columns: repeat(4, 1fr); }
+  .wives-row::before { left: calc(12.5% + 8px); right: calc(12.5% + 8px); }
   .sons-grid { grid-template-columns: 1fr 1fr; }
   .tribe-map { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 560px) {
   .sons-grid { grid-template-columns: 1fr; }
-  .wives-row { grid-template-columns: 1fr 1fr; }
+  .tree-wrap { padding: 4px 2px 18px; }
+  .tree { min-width: 680px; }
+  .jacob-card { padding: 10px 18px; }
+  .jacob-card .j-emoji, .jacob-card .j-sub { display: none; }
+  .jacob-card .j-name { font-size: 17px; }
+  .jacob-line { height: 24px; }
+  .wives-row { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .wives-row::before { left: calc(12.5% + 4px); right: calc(12.5% + 4px); }
+  .wife-line-top, .wife-line-bottom { height: 18px; }
+  .wife-card { padding: 9px 6px; }
+  .wife-card .w-emoji, .wife-card .w-role { display: none; }
+  .wife-card .w-name { font-size: 15px; }
+  .sons-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .son-card { min-height: 38px; display: grid; place-items: center; padding: 7px 5px; border-left-width: 3px; text-align: center; }
+  .tree .son-order, .tree .son-emoji, .tree .son-meaning, .tree .son-story { display: none; }
+  .tree .son-name { margin: 0; font-size: 13px; white-space: nowrap; }
   .tribe-map { grid-template-columns: repeat(2, 1fr); }
-  .tree { min-width: 600px; }
+  .tribe-transition { grid-template-columns: 1fr; gap: 8px; }
+  .transition-card { min-height: 72px; padding: 13px; }
+  .transition-arrow { line-height: 1; transform: rotate(90deg); text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   .fade-up { opacity: 1; transform: none; }
@@ -364,15 +395,16 @@ button { -webkit-tap-highlight-color: transparent; }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
 <div id="progress-bar" aria-hidden="true"></div>
 
 <!-- ── COVER ── -->
 <header class="cover" id="top">
   <div class="cover-stars" aria-hidden="true"></div>
   <div class="cover-inner fade-up">
-    <div class="cover-mark">⭐</div>
+    <div class="cover-mark" aria-hidden="true">⭐</div>
     <p class="cover-series">청년성서모임 궁금증 · 창세기 9과</p>
-    <h1>야곱의 <em>열 두 아들</em></h1>
+    <h1>야곱의 <em>열두 아들</em></h1>
     <p class="cover-sub">이스라엘 열두 지파의 시작</p>
     <div class="mother-pills">
       <span class="mother-pill leah">레아 · 6아들</span>
@@ -386,7 +418,7 @@ button { -webkit-tap-highlight-color: transparent; }
 <!-- ── STICKY NAV ── -->
 <nav class="sticky-nav" aria-label="본문 목차">
   <div class="sticky-nav-inner">
-    <a class="nav-brand" href="#top">9과 · 열 두 아들</a>
+    <a class="nav-brand" href="#top">9과 · 열두 아들</a>
     <ul class="nav-links">
       <li><a href="#tree">가계도</a></li>
       <li><a href="#leah-sec">레아</a></li>
@@ -397,7 +429,7 @@ button { -webkit-tap-highlight-color: transparent; }
     </ul>
     <div class="nav-actions">
       <a class="pill-btn" href="index.html">🏠 목차</a>
-      <button class="pill-btn" id="theme-toggle" aria-label="다크 모드">☾</button>
+      <button class="pill-btn" id="theme-toggle" type="button" aria-label="다크 모드 전환">☾</button>
     </div>
   </div>
 </nav>
@@ -407,10 +439,10 @@ button { -webkit-tap-highlight-color: transparent; }
   <!-- ══ 가계도 ══ -->
   <section class="section" id="tree">
     <div class="section-header fade-up">
-      <p class="section-kicker">Family Tree</p>
+      <p class="section-kicker">Family Tree · 가계도</p>
       <h2>야곱 가계도 — 네 어머니와 열두 아들</h2>
     </div>
-    <div class="tree-wrap fade-up">
+    <div class="tree-wrap fade-up" tabindex="0" aria-label="야곱과 네 어머니, 열두 아들의 가계도. 좌우로 스크롤할 수 있습니다.">
       <div class="tree">
         <!-- 야곱 -->
         <div class="tree-jacob">
@@ -431,12 +463,12 @@ button { -webkit-tap-highlight-color: transparent; }
             <div class="wife-card leah">
               <div class="w-emoji">👸</div>
               <div class="w-name">레아</div>
-              <div class="w-role">첫째 아내 · 야곱의 본처</div>
+              <div class="w-role">첫째 아내 · 라반의 맏딸</div>
             </div>
             <div class="wife-line-bottom" style="background:var(--leah)"></div>
             <div class="sons-col">
               <div class="son-card leah"><span class="son-order">장남</span><span class="son-emoji">👁️</span><div class="son-name">르우벤</div><div class="son-meaning">보라, 아들이다</div><div class="son-story">주님께서 나의 괴로움을 보아주셨다</div></div>
-              <div class="son-card leah"><span class="son-order">차남</span><span class="son-emoji">👂</span><div class="son-name">시므온</div><div class="son-meaning">들으셨다</div><div class="son-story">사랑받지 못함을 주님께서 들으셨다</div></div>
+              <div class="son-card leah"><span class="son-order">차남</span><span class="son-emoji">👂</span><div class="son-name">시메온</div><div class="son-meaning">들으셨다</div><div class="son-story">사랑받지 못함을 주님께서 들으셨다</div></div>
               <div class="son-card leah"><span class="son-order">3남</span><span class="son-emoji">🔗</span><div class="son-name">레위</div><div class="son-meaning">매이다</div><div class="son-story">이제는 남편이 나에게 매이겠지</div></div>
               <div class="son-card leah"><span class="son-order">4남</span><span class="son-emoji">🎵</span><div class="son-name">유다</div><div class="son-meaning">찬송하다</div><div class="son-story">이제야말로 주님을 찬송하리라</div></div>
               <div class="son-card leah"><span class="son-order">9남</span><span class="son-emoji">🌾</span><div class="son-name">이사카르</div><div class="son-meaning">값·갚아주다</div><div class="son-story">몸종을 준 값을 하느님께서 갚아 주셨다</div></div>
@@ -497,8 +529,8 @@ button { -webkit-tap-highlight-color: transparent; }
         <span class="mh-emoji">👸</span>
         <div class="mh-info leah">
           <div class="mh-name">레아 — 첫째 아내</div>
-          <div class="mh-role">야곱의 본처 · 6아들 1딸(디나) · 라반의 딸</div>
-          <div class="mh-desc">야곱이 원하지 않았지만 라반의 속임으로 먼저 들어온 아내. 눈이 약하고 사랑받지 못한 레아를 하느님께서 먼저 돌보시어 여섯 아들을 주셨습니다. 각 아들의 이름에는 레아의 기도와 눈물이 담겨 있습니다.</div>
+          <div class="mh-role">첫째 아내 · 6아들 1딸(디나) · 라반의 맏딸</div>
+          <div class="mh-desc">라반의 속임으로 라헬보다 먼저 야곱의 아내가 되었습니다. 사랑받지 못한 레아를 하느님께서 먼저 돌보시어 여섯 아들을 주셨습니다. 각 아들의 이름에는 레아의 기도와 눈물이 담겨 있습니다.</div>
         </div>
       </div>
       <div class="sons-grid fade-up">
@@ -512,11 +544,11 @@ button { -webkit-tap-highlight-color: transparent; }
           <p class="char-story">장남. 이름은 '르우(보라) + 벤(아들)'의 합성어입니다. 레아가 주님의 돌보심을 눈으로 확인하며 외친 감탄과 감사의 이름입니다.</p>
           <div class="char-quote">"주님께서 나의 괴로움을 보아주셨구나. 이제는 남편이 나를 사랑해 주시겠지." — 창세 29,32</div>
         </div>
-        <!-- 시므온 -->
+        <!-- 시메온 -->
         <div class="char-card leah">
           <div class="char-order">2</div>
           <span class="char-emoji">👂</span>
-          <div class="char-name">시므온</div>
+          <div class="char-name">시메온</div>
           <div class="char-hebrew">שִׁמְעוֹן</div>
           <span class="char-meaning-tag">들으셨다</span>
           <p class="char-story">히브리어 '샤마(שָׁמַע, 듣다)'에서 유래. 하느님께서 레아의 기도와 사랑받지 못하는 고통의 호소를 들으셨다는 고백입니다.</p>
@@ -529,7 +561,7 @@ button { -webkit-tap-highlight-color: transparent; }
           <div class="char-name">레위</div>
           <div class="char-hebrew">לֵוִי</div>
           <span class="char-meaning-tag">매이다 · 결합</span>
-          <p class="char-story">'라와(לָוָה, 매이다·함께하다)'에서 유래. 레아는 셋째 아들로 마침내 남편의 마음이 자신에게 묶이기를 소망했습니다. 훗날 레위 지파는 성막 제사직을 맡습니다.</p>
+          <p class="char-story">'라와(לָוָה, 매이다·함께하다)'에서 유래. 레아는 셋째 아들로 마침내 남편의 마음이 자신에게 묶이기를 소망했습니다. 훗날 레위 지파는 성막 봉사를 맡고, 그 가운데 아론의 자손들이 사제 직무를 맡습니다.</p>
           <div class="char-quote">"이번에는 남편이 나에게 매이겠지. 내가 아들 셋을 낳았으니." — 창세 29,34</div>
         </div>
         <!-- 유다 -->
@@ -595,7 +627,7 @@ button { -webkit-tap-highlight-color: transparent; }
           <div class="char-name">납탈리</div>
           <div class="char-hebrew">נַפְתָּלִי</div>
           <span class="char-meaning-tag">싸움 · 겨루다</span>
-          <p class="char-story">'나프탈(נָפְתַּל, 씨름하다·겨루다)'에서 유래. 자매인 레아와 라헬 사이의 치열한 경쟁이 이름 자체에 새겨졌습니다. 야곱이 야뽁에서 씨름한 '이스라엘'과 같은 어근입니다.</p>
+          <p class="char-story">'나프탈(נָפְתַּל, 씨름하다·겨루다)'에서 유래. 자매인 레아와 라헬 사이의 치열한 경쟁이 이름 자체에 새겨졌습니다.</p>
           <div class="char-quote">"내가 언니와 죽도록 싸워서 이겼다." — 창세 30,8</div>
         </div>
       </div>
@@ -646,7 +678,7 @@ button { -webkit-tap-highlight-color: transparent; }
         <div class="mh-info rachel">
           <div class="mh-name">라헬 — 둘째 아내</div>
           <div class="mh-role">야곱이 사랑한 아내 · 2아들 · 요셉과 베냐민의 어머니</div>
-          <div class="mh-desc">야곱이 7년을 며칠처럼 일한 진정한 사랑. 그러나 오랫동안 아이를 낳지 못해 괴로워했습니다. 마침내 요셉을 낳았고, 베냐민을 낳다가 산고로 세상을 떠났습니다.</div>
+          <div class="mh-desc">야곱은 라헬을 얻기 위해 칠 년을 일했고, 그 세월을 며칠처럼 여겼다고 성경은 전합니다. 라헬은 오랫동안 아이를 낳지 못해 괴로워하다 요셉을 낳았고, 베냐민을 낳다가 세상을 떠났습니다.</div>
         </div>
       </div>
       <div class="sons-grid fade-up" style="grid-template-columns:repeat(2,1fr)">
@@ -674,12 +706,22 @@ button { -webkit-tap-highlight-color: transparent; }
     </div>
   </section>
 
-  <!-- ══ 열두 지파 한눈에 ══ -->
+  <!-- ══ 열두 아들에서 열두 지파로 ══ -->
   <section class="section" id="tribes">
     <div class="section-header fade-up">
-      <p class="section-kicker">Twelve Tribes</p>
-      <h2>열두 지파 한눈에 — 이름과 뜻</h2>
+      <p class="section-kicker">From Sons to Tribes · 아들에서 지파로</p>
+      <h2>야곱의 열두 아들에서 이스라엘 열두 지파로</h2>
     </div>
+    <div class="tribe-transition fade-up" aria-label="야곱의 열두 아들이 이스라엘 열두 지파의 뿌리가 되는 흐름">
+      <div class="transition-card">
+        <div><strong>야곱의 열두 아들</strong><span>한 가족의 열두 이름</span></div>
+      </div>
+      <div class="transition-arrow" aria-hidden="true">→</div>
+      <div class="transition-card destination">
+        <div><strong>이스라엘 열두 지파</strong><span>한 민족 공동체의 뿌리</span></div>
+      </div>
+    </div>
+    <p class="tribe-note fade-up">야곱의 열두 아들과 그 후손들은 이스라엘 열두 지파의 뿌리가 됩니다. 다만 실제 지파 명단은 목적에 따라 레위를 별도로 다루고, 요셉의 두 아들 에프라임과 므나쎄를 각각 세는 등 구성이 달라질 수 있습니다.</p>
     <div class="legend fade-up">
       <div class="leg-item"><div class="leg-dot leah"></div>레아의 아들</div>
       <div class="leg-item"><div class="leg-dot bilhah"></div>빌하의 아들 (라헬 대리)</div>
@@ -688,7 +730,7 @@ button { -webkit-tap-highlight-color: transparent; }
     </div>
     <div class="tribe-map fade-up">
       <div class="tribe-cell leah">   <span class="t-emoji">👁️</span><div class="t-name">르우벤 ①</div><div class="t-meaning">보라, 아들이다</div></div>
-      <div class="tribe-cell leah">   <span class="t-emoji">👂</span><div class="t-name">시므온 ②</div><div class="t-meaning">들으셨다</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">👂</span><div class="t-name">시메온 ②</div><div class="t-meaning">들으셨다</div></div>
       <div class="tribe-cell leah">   <span class="t-emoji">🔗</span><div class="t-name">레위 ③</div><div class="t-meaning">매이다</div></div>
       <div class="tribe-cell leah">   <span class="t-emoji">🎵</span><div class="t-name">유다 ④</div><div class="t-meaning">찬송하다</div></div>
       <div class="tribe-cell bilhah"> <span class="t-emoji">⚖️</span><div class="t-name">단 ⑤</div><div class="t-meaning">심판하다</div></div>
@@ -706,12 +748,12 @@ button { -webkit-tap-highlight-color: transparent; }
     <a class="return-link" href="index.html"><span>←</span> 창세기 시리즈 목차로 돌아가기</a>
   </div>
   <footer class="footer">
-    <strong>창세기 9과 — 야곱의 열 두 아들</strong>
+    <strong>창세기 9과 — 야곱의 열두 아들</strong>
     <span>청년성서모임 궁금증 · © 2026</span>
   </footer>
 </main>
 
-<button class="back-to-top" id="back-top" aria-label="맨 위로">↑</button>
+<button class="back-to-top" id="back-top" type="button" aria-label="맨 위로 이동">↑</button>
 
 <script>
 (function(){
