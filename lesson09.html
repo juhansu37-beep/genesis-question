@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>창세기 9과 — 야곱의 열 두 아들</title>
+<meta name="description" content="창세기 9과 야곱의 열 두 아들. 야곱의 네 아내와 열두 아들의 이름, 뜻, 가계도, 이스라엘 열두 지파의 시작을 시각적으로 살펴봅니다.">
+<meta property="og:title" content="창세기 9과 — 야곱의 열 두 아들">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#1A3D5C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6F4EF;
+  --bg-card: #FFFFFF;
+  --ink: #1A1410;
+  --ink-mid: #2C2418;
+  --ink-soft: #5A4E42;
+  --rule: #D8D0C0;
+  --rule-light: #ECE8E0;
+  --quote-bg: #F0EAD8;
+  --gold: #D9B44A;
+  --gold-dark: #A07830;
+  --font-serif: 'Noto Serif KR', Georgia, serif;
+  --font-sans: 'Noto Sans KR', sans-serif;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(0,0,0,.07);
+  --shadow-hover: 0 12px 36px rgba(0,0,0,.12);
+
+  /* 어머니별 컬러 */
+  --leah: #6B4E8B;      /* 레아 — 보라 */
+  --leah-pale: #F3EEF8;
+  --leah-mid: #9B78BB;
+  --rachel: #2D7A6B;    /* 라헬 — 초록청 */
+  --rachel-pale: #EBF6F3;
+  --rachel-mid: #5DAA9A;
+  --bilhah: #B85A2A;    /* 빌하 — 테라코타 */
+  --bilhah-pale: #FBF0EB;
+  --bilhah-mid: #D88A60;
+  --zilpah: #3A6EA8;    /* 질파 — 코발트 */
+  --zilpah-pale: #EBF2FA;
+  --zilpah-mid: #6A9ECC;
+  --jacob: #1A3D5C;     /* 야곱 */
+  --jacob-gold: #D9B44A;
+}
+[data-theme="dark"] {
+  --bg: #111820; --bg-card: #1C2530;
+  --ink: #F0EAD8; --ink-mid: #D8CEB8; --ink-soft: #A09880;
+  --rule: #2E3A48; --rule-light: #243040;
+  --quote-bg: #1A2430;
+  --leah-pale: #1E1428; --rachel-pale: #0E2420;
+  --bilhah-pale: #281408; --zilpah-pale: #101828;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-serif); font-weight: 300; line-height: 1.9;
+  word-break: keep-all; -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(26,61,92,.025) 1px, transparent 1px) 0 0 / 64px 64px,
+    radial-gradient(circle at 80% 5%, rgba(217,180,74,.12), transparent 38%);
+}
+a { color: inherit; text-decoration: none; }
+button { -webkit-tap-highlight-color: transparent; }
+
+/* ── PROGRESS ── */
+#progress-bar {
+  position: fixed; top: 0; left: 0; width: 0%; height: 3px; z-index: 9999;
+  background: linear-gradient(90deg, var(--leah), var(--bilhah), var(--zilpah), var(--rachel));
+  transition: width .12s linear;
+}
+
+/* ── COVER ── */
+.cover {
+  min-height: 78vh; display: grid; place-items: center;
+  position: relative; overflow: hidden;
+  padding: 92px 28px 80px; color: #F0EAD8; text-align: center;
+  background: linear-gradient(150deg, #0D1E2C 0%, #1A3D5C 50%, #2D5F8B 100%);
+}
+.cover::before {
+  content: ""; position: absolute; inset: 0; opacity: .4;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.cover::after {
+  content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--leah), var(--bilhah), var(--zilpah), var(--rachel), var(--gold));
+}
+/* 12별 장식 */
+.cover-stars {
+  position: absolute; inset: 0; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Ccircle cx='80' cy='60' r='2' fill='%23D9B44A' opacity='.7'/%3E%3Ccircle cx='200' cy='30' r='1.5' fill='%23fff' opacity='.5'/%3E%3Ccircle cx='400' cy='50' r='2' fill='%23D9B44A' opacity='.6'/%3E%3Ccircle cx='600' cy='25' r='1.5' fill='%23fff' opacity='.55'/%3E%3Ccircle cx='750' cy='70' r='2' fill='%23D9B44A' opacity='.65'/%3E%3Ccircle cx='860' cy='40' r='1.5' fill='%23fff' opacity='.45'/%3E%3Ccircle cx='140' cy='130' r='1.5' fill='%23fff' opacity='.4'/%3E%3Ccircle cx='330' cy='110' r='1' fill='%23D9B44A' opacity='.5'/%3E%3Ccircle cx='520' cy='140' r='1.5' fill='%23fff' opacity='.45'/%3E%3Ccircle cx='700' cy='120' r='1' fill='%23D9B44A' opacity='.55'/%3E%3Ccircle cx='820' cy='150' r='1.5' fill='%23fff' opacity='.4'/%3E%3Ccircle cx='50' cy='200' r='1' fill='%23fff' opacity='.35'/%3E%3C/svg%3E") center top / cover no-repeat;
+}
+.cover-inner { position: relative; z-index: 1; width: min(760px, 100%); }
+.cover-mark { font-size: 44px; margin-bottom: 20px; }
+.cover-series {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+  letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 18px;
+}
+.cover h1 { font-size: clamp(32px, 7vw, 68px); font-weight: 700; line-height: 1.15; margin-bottom: 14px; }
+.cover h1 em { font-style: normal; color: var(--gold); }
+.cover-sub { font-family: var(--font-sans); font-size: clamp(15px, 2.8vw, 19px); color: #B8CCE0; font-weight: 300; line-height: 1.8; margin-bottom: 32px; }
+.mother-pills {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;
+  margin-top: 8px;
+}
+.mother-pill {
+  padding: 8px 16px; border-radius: 999px; font-family: var(--font-sans);
+  font-size: 13px; font-weight: 700; letter-spacing: .5px;
+  border: 1.5px solid rgba(255,255,255,.3); color: white;
+}
+.mother-pill.leah   { background: rgba(107,78,139,.55); border-color: rgba(155,120,187,.6); }
+.mother-pill.bilhah { background: rgba(184,90,42,.55);  border-color: rgba(216,138,96,.6); }
+.mother-pill.zilpah { background: rgba(58,110,168,.55); border-color: rgba(106,158,204,.6); }
+.mother-pill.rachel { background: rgba(45,122,107,.55); border-color: rgba(93,170,154,.6); }
+
+/* ── STICKY NAV ── */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 500;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(246,244,239,.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+[data-theme="dark"] .sticky-nav { background: rgba(17,24,32,.95); }
+.sticky-nav-inner {
+  max-width: 1160px; margin: 0 auto; display: flex; align-items: center;
+  gap: 14px; padding: 0 24px; overflow-x: auto; scrollbar-width: none;
+}
+.sticky-nav-inner::-webkit-scrollbar { display: none; }
+.nav-brand { flex: 0 0 auto; padding: 14px 18px 14px 0; border-right: 1px solid var(--rule); color: var(--jacob); font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
+.nav-links { display: flex; gap: 3px; list-style: none; flex: 0 0 auto; }
+.nav-links a { display: block; padding: 14px 10px 12px; border-bottom: 2px solid transparent; color: var(--ink-soft); font-family: var(--font-sans); font-size: 12px; transition: color .2s, border-color .2s; white-space: nowrap; }
+.nav-links a:hover, .nav-links a.active { color: var(--jacob); border-bottom-color: var(--gold); }
+.nav-actions { display: flex; gap: 8px; margin-left: auto; flex: 0 0 auto; }
+.pill-btn { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 8px 13px; border: 1px solid var(--rule); border-radius: 999px; background: var(--bg-card); color: var(--jacob); font-family: var(--font-sans); font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,.05); transition: transform .2s, border-color .2s; }
+.pill-btn:hover { transform: translateY(-2px); border-color: var(--gold); }
+
+/* ── PAGE ── */
+.page { max-width: 1160px; margin: 0 auto; padding: 72px 24px 80px; }
+.section { margin-bottom: 88px; scroll-margin-top: 72px; }
+.section-header { margin-bottom: 32px; padding-bottom: 18px; border-bottom: 2px solid var(--rule); }
+.section-kicker { font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 8px; }
+.section h2 { font-size: clamp(24px, 4.5vw, 40px); font-weight: 700; line-height: 1.28; color: var(--ink-mid); }
+
+/* ══ FAMILY TREE ══ */
+.tree-wrap {
+  overflow-x: auto; padding: 8px 4px 24px;
+}
+.tree {
+  display: flex; flex-direction: column; align-items: center;
+  min-width: 900px;
+}
+
+/* 야곱 */
+.tree-jacob {
+  display: flex; flex-direction: column; align-items: center; margin-bottom: 0;
+}
+.jacob-card {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 28px; border-radius: var(--radius);
+  background: var(--jacob); color: #F0EAD8;
+  box-shadow: 0 8px 32px rgba(26,61,92,.3);
+  font-family: var(--font-sans); font-weight: 700;
+}
+.jacob-card .j-emoji { font-size: 32px; }
+.jacob-card .j-name { font-size: 22px; letter-spacing: 1px; }
+.jacob-card .j-sub { font-size: 12px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+.jacob-line { width: 2px; height: 36px; background: var(--gold); }
+
+/* 아내 행 */
+.wives-row {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  width: 100%; position: relative;
+}
+/* 연결선 */
+.wives-row::before {
+  content: ""; position: absolute;
+  top: 0; left: calc(12.5% + 8px); right: calc(12.5% + 8px);
+  height: 2px; background: var(--gold);
+}
+.wife-col { display: flex; flex-direction: column; align-items: center; }
+.wife-line-top { width: 2px; height: 28px; }
+.wife-card {
+  width: 100%; border-radius: var(--radius); padding: 16px 18px;
+  text-align: center; font-family: var(--font-sans); font-weight: 700;
+  box-shadow: var(--shadow);
+  border: 2px solid;
+}
+.wife-card .w-emoji { font-size: 28px; margin-bottom: 6px; }
+.wife-card .w-name { font-size: 18px; margin-bottom: 2px; }
+.wife-card .w-role { font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; opacity: .75; }
+.wife-card.leah   { background: var(--leah-pale); border-color: var(--leah); color: var(--leah); }
+.wife-card.bilhah { background: var(--bilhah-pale); border-color: var(--bilhah); color: var(--bilhah); }
+.wife-card.zilpah { background: var(--zilpah-pale); border-color: var(--zilpah); color: var(--zilpah); }
+.wife-card.rachel { background: var(--rachel-pale); border-color: var(--rachel); color: var(--rachel); }
+.wife-line-bottom { width: 2px; height: 28px; }
+
+/* 아들 그리드 (각 어머니 컬럼 안) */
+.sons-col { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+
+/* ══ SON CARD ══ */
+.son-card {
+  border-radius: 10px; padding: 14px 16px; cursor: default;
+  border-left: 4px solid; background: var(--bg-card); box-shadow: var(--shadow);
+  transition: transform .22s, box-shadow .22s;
+  position: relative; overflow: hidden;
+}
+.son-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.son-card.leah   { border-color: var(--leah); }
+.son-card.bilhah { border-color: var(--bilhah); }
+.son-card.zilpah { border-color: var(--zilpah); }
+.son-card.rachel { border-color: var(--rachel); }
+.son-order {
+  position: absolute; top: 10px; right: 12px;
+  font-family: var(--font-sans); font-size: 10px; font-weight: 700;
+  letter-spacing: 1px; opacity: .45;
+}
+.son-emoji { font-size: 26px; margin-bottom: 6px; display: block; }
+.son-name { font-size: 17px; font-weight: 700; color: var(--ink-mid); margin-bottom: 2px; line-height: 1.3; }
+.son-meaning {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;
+}
+.son-card.leah   .son-meaning { color: var(--leah); }
+.son-card.bilhah .son-meaning { color: var(--bilhah); }
+.son-card.zilpah .son-meaning { color: var(--zilpah); }
+.son-card.rachel .son-meaning { color: var(--rachel); }
+.son-story { font-family: var(--font-sans); font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; }
+
+/* ══ CHARACTER CARDS (풀 뷰) ══ */
+.mother-section { margin-bottom: 64px; scroll-margin-top: 72px; }
+.mother-header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 22px; border-radius: var(--radius);
+  margin-bottom: 20px; box-shadow: var(--shadow);
+}
+.mother-header.leah   { background: var(--leah-pale); border: 1.5px solid var(--leah); }
+.mother-header.bilhah { background: var(--bilhah-pale); border: 1.5px solid var(--bilhah); }
+.mother-header.zilpah { background: var(--zilpah-pale); border: 1.5px solid var(--zilpah); }
+.mother-header.rachel { background: var(--rachel-pale); border: 1.5px solid var(--rachel); }
+.mh-emoji { font-size: 36px; }
+.mh-info .mh-name { font-size: 22px; font-weight: 700; }
+.mh-info.leah   .mh-name { color: var(--leah); }
+.mh-info.bilhah .mh-name { color: var(--bilhah); }
+.mh-info.zilpah .mh-name { color: var(--zilpah); }
+.mh-info.rachel .mh-name { color: var(--rachel); }
+.mh-info .mh-role { font-family: var(--font-sans); font-size: 12px; font-weight: 500; color: var(--ink-soft); letter-spacing: 1px; margin-top: 2px; }
+.mh-info .mh-desc { font-family: var(--font-sans); font-size: 14px; color: var(--ink-soft); line-height: 1.7; margin-top: 6px; max-width: 600px; }
+
+.sons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.char-card {
+  border-radius: 14px; padding: 24px 20px; background: var(--bg-card);
+  box-shadow: var(--shadow); border: 1px solid var(--rule-light);
+  position: relative; overflow: hidden;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.char-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.char-card::before {
+  content: ""; position: absolute; inset: 0 0 auto; height: 4px;
+}
+.char-card.leah::before   { background: linear-gradient(90deg, var(--leah), var(--leah-mid)); }
+.char-card.bilhah::before { background: linear-gradient(90deg, var(--bilhah), var(--bilhah-mid)); }
+.char-card.zilpah::before { background: linear-gradient(90deg, var(--zilpah), var(--zilpah-mid)); }
+.char-card.rachel::before { background: linear-gradient(90deg, var(--rachel), var(--rachel-mid)); }
+.char-order {
+  position: absolute; top: 14px; right: 14px;
+  width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+  font-family: var(--font-sans); font-size: 11px; font-weight: 700; color: white;
+}
+.char-card.leah   .char-order { background: var(--leah); }
+.char-card.bilhah .char-order { background: var(--bilhah); }
+.char-card.zilpah .char-order { background: var(--zilpah); }
+.char-card.rachel .char-order { background: var(--rachel); }
+.char-emoji { font-size: 44px; display: block; margin-bottom: 12px; line-height: 1; }
+.char-name { font-size: 22px; font-weight: 700; color: var(--ink-mid); margin-bottom: 4px; }
+.char-hebrew { font-size: 15px; font-weight: 300; color: var(--ink-soft); direction: rtl; font-family: serif; letter-spacing: 1px; margin-bottom: 8px; }
+.char-meaning-tag {
+  display: inline-block; padding: 5px 12px; border-radius: 999px;
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  letter-spacing: .5px; margin-bottom: 14px; color: white;
+}
+.char-card.leah   .char-meaning-tag { background: var(--leah); }
+.char-card.bilhah .char-meaning-tag { background: var(--bilhah); }
+.char-card.zilpah .char-meaning-tag { background: var(--zilpah); }
+.char-card.rachel .char-meaning-tag { background: var(--rachel); }
+.char-story { font-family: var(--font-sans); font-size: 14px; color: var(--ink-soft); line-height: 1.8; }
+.char-quote {
+  margin-top: 12px; padding: 10px 14px;
+  border-left: 3px solid; border-radius: 0 6px 6px 0;
+  font-family: var(--font-sans); font-size: 13px; font-style: italic; color: var(--ink-mid); line-height: 1.7;
+}
+.char-card.leah   .char-quote { border-color: var(--leah);   background: var(--leah-pale); }
+.char-card.bilhah .char-quote { border-color: var(--bilhah); background: var(--bilhah-pale); }
+.char-card.zilpah .char-quote { border-color: var(--zilpah); background: var(--zilpah-pale); }
+.char-card.rachel .char-quote { border-color: var(--rachel); background: var(--rachel-pale); }
+
+/* ── TRIBE MAP ── */
+.tribe-map { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 24px; }
+.tribe-cell {
+  padding: 14px; border-radius: 8px; text-align: center;
+  border: 1px solid var(--rule-light); background: var(--bg-card); box-shadow: var(--shadow);
+}
+.tribe-cell .t-emoji { font-size: 22px; margin-bottom: 4px; display: block; }
+.tribe-cell .t-name { font-size: 14px; font-weight: 700; color: var(--ink-mid); margin-bottom: 2px; }
+.tribe-cell .t-meaning { font-family: var(--font-sans); font-size: 11px; color: var(--ink-soft); }
+.tribe-cell.leah   { border-top: 3px solid var(--leah); }
+.tribe-cell.bilhah { border-top: 3px solid var(--bilhah); }
+.tribe-cell.zilpah { border-top: 3px solid var(--zilpah); }
+.tribe-cell.rachel { border-top: 3px solid var(--rachel); }
+
+/* ── RETURN ── */
+.return-panel { text-align: center; margin: 40px 0 20px; }
+.return-link { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; border: 1px solid var(--rule); border-radius: 999px; background: var(--bg-card); color: var(--jacob); font-family: var(--font-sans); font-size: 14px; font-weight: 700; box-shadow: var(--shadow); transition: transform .2s, border-color .2s; }
+.return-link:hover { transform: translateY(-2px); border-color: var(--gold); }
+.footer { margin-top: 52px; padding: 28px 0 16px; border-top: 1px solid var(--rule); color: var(--ink-soft); text-align: center; font-family: var(--font-sans); font-size: 13px; }
+.footer strong { display: block; font-family: var(--font-serif); font-size: 18px; color: var(--ink-mid); margin-bottom: 4px; }
+.footer span { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-dark); }
+
+/* ── BACK TO TOP ── */
+.back-to-top { position: fixed; right: 20px; bottom: 20px; z-index: 700; width: 44px; height: 44px; border: 1px solid var(--rule); border-radius: 50%; background: var(--bg-card); color: var(--jacob); font-size: 18px; cursor: pointer; box-shadow: var(--shadow); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s; }
+.back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+/* ── FADE ── */
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.visible { opacity: 1; transform: translateY(0); }
+
+/* ── LEGEND ── */
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.leg-item { display: flex; align-items: center; gap: 8px; font-family: var(--font-sans); font-size: 13px; color: var(--ink-soft); }
+.leg-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+.leg-dot.leah   { background: var(--leah); }
+.leg-dot.bilhah { background: var(--bilhah); }
+.leg-dot.zilpah { background: var(--zilpah); }
+.leg-dot.rachel { background: var(--rachel); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .wives-row { grid-template-columns: repeat(2, 1fr); }
+  .wives-row::before { left: calc(25% + 8px); right: calc(25% + 8px); }
+  .sons-grid { grid-template-columns: 1fr 1fr; }
+  .tribe-map { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .sons-grid { grid-template-columns: 1fr; }
+  .wives-row { grid-template-columns: 1fr 1fr; }
+  .tribe-map { grid-template-columns: repeat(2, 1fr); }
+  .tree { min-width: 600px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { opacity: 1; transform: none; }
+  * { transition-duration: .01ms !important; }
+}
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+  #progress-bar, .sticky-nav, .back-to-top, .return-panel, body::before { display: none !important; }
+  .sons-grid { grid-template-columns: 1fr 1fr; }
+  .char-card { box-shadow: none !important; border: 1px solid #ccc !important; break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<!-- ── COVER ── -->
+<header class="cover" id="top">
+  <div class="cover-stars" aria-hidden="true"></div>
+  <div class="cover-inner fade-up">
+    <div class="cover-mark">⭐</div>
+    <p class="cover-series">청년성서모임 궁금증 · 창세기 9과</p>
+    <h1>야곱의 <em>열 두 아들</em></h1>
+    <p class="cover-sub">이스라엘 열두 지파의 시작</p>
+    <div class="mother-pills">
+      <span class="mother-pill leah">레아 · 6아들</span>
+      <span class="mother-pill bilhah">빌하 · 2아들</span>
+      <span class="mother-pill zilpah">질파 · 2아들</span>
+      <span class="mother-pill rachel">라헬 · 2아들</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── STICKY NAV ── -->
+<nav class="sticky-nav" aria-label="본문 목차">
+  <div class="sticky-nav-inner">
+    <a class="nav-brand" href="#top">9과 · 열 두 아들</a>
+    <ul class="nav-links">
+      <li><a href="#tree">가계도</a></li>
+      <li><a href="#leah-sec">레아</a></li>
+      <li><a href="#bilhah-sec">빌하</a></li>
+      <li><a href="#zilpah-sec">질파</a></li>
+      <li><a href="#rachel-sec">라헬</a></li>
+      <li><a href="#tribes">열두 지파</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="pill-btn" href="index.html">🏠 목차</a>
+      <button class="pill-btn" id="theme-toggle" aria-label="다크 모드">☾</button>
+    </div>
+  </div>
+</nav>
+
+<main class="page" id="main">
+
+  <!-- ══ 가계도 ══ -->
+  <section class="section" id="tree">
+    <div class="section-header fade-up">
+      <p class="section-kicker">Family Tree</p>
+      <h2>야곱 가계도 — 네 어머니와 열두 아들</h2>
+    </div>
+    <div class="tree-wrap fade-up">
+      <div class="tree">
+        <!-- 야곱 -->
+        <div class="tree-jacob">
+          <div class="jacob-card">
+            <span class="j-emoji">👴</span>
+            <div>
+              <div class="j-name">야곱 (이스라엘)</div>
+              <div class="j-sub">이스라엘의 아버지 · 성조</div>
+            </div>
+          </div>
+          <div class="jacob-line"></div>
+        </div>
+        <!-- 아내 4명 + 아들들 -->
+        <div class="wives-row">
+          <!-- 레아 -->
+          <div class="wife-col">
+            <div class="wife-line-top" style="background:var(--leah)"></div>
+            <div class="wife-card leah">
+              <div class="w-emoji">👸</div>
+              <div class="w-name">레아</div>
+              <div class="w-role">첫째 아내 · 야곱의 본처</div>
+            </div>
+            <div class="wife-line-bottom" style="background:var(--leah)"></div>
+            <div class="sons-col">
+              <div class="son-card leah"><span class="son-order">장남</span><span class="son-emoji">👁️</span><div class="son-name">르우벤</div><div class="son-meaning">보라, 아들이다</div><div class="son-story">주님께서 나의 괴로움을 보아주셨다</div></div>
+              <div class="son-card leah"><span class="son-order">차남</span><span class="son-emoji">👂</span><div class="son-name">시므온</div><div class="son-meaning">들으셨다</div><div class="son-story">사랑받지 못함을 주님께서 들으셨다</div></div>
+              <div class="son-card leah"><span class="son-order">3남</span><span class="son-emoji">🔗</span><div class="son-name">레위</div><div class="son-meaning">매이다</div><div class="son-story">이제는 남편이 나에게 매이겠지</div></div>
+              <div class="son-card leah"><span class="son-order">4남</span><span class="son-emoji">🎵</span><div class="son-name">유다</div><div class="son-meaning">찬송하다</div><div class="son-story">이제야말로 주님을 찬송하리라</div></div>
+              <div class="son-card leah"><span class="son-order">9남</span><span class="son-emoji">🌾</span><div class="son-name">이사카르</div><div class="son-meaning">값·갚아주다</div><div class="son-story">몸종을 준 값을 하느님께서 갚아 주셨다</div></div>
+              <div class="son-card leah"><span class="son-order">10남</span><span class="son-emoji">🎁</span><div class="son-name">즈불룬</div><div class="son-meaning">선물·잘 대해 주다</div><div class="son-story">이제는 나를 잘 대해 주겠지</div></div>
+            </div>
+          </div>
+          <!-- 빌하 -->
+          <div class="wife-col">
+            <div class="wife-line-top" style="background:var(--bilhah)"></div>
+            <div class="wife-card bilhah">
+              <div class="w-emoji">🤱</div>
+              <div class="w-name">빌하</div>
+              <div class="w-role">라헬의 몸종 · 라헬의 아들로 여겨짐</div>
+            </div>
+            <div class="wife-line-bottom" style="background:var(--bilhah)"></div>
+            <div class="sons-col">
+              <div class="son-card bilhah"><span class="son-order">5남</span><span class="son-emoji">⚖️</span><div class="son-name">단</div><div class="son-meaning">심판하다</div><div class="son-story">하느님께서 내 권리를 되찾아 주셨다</div></div>
+              <div class="son-card bilhah"><span class="son-order">6남</span><span class="son-emoji">🤼</span><div class="son-name">납탈리</div><div class="son-meaning">싸움·겨루다</div><div class="son-story">언니와 죽도록 싸워서 이겼다</div></div>
+            </div>
+          </div>
+          <!-- 질파 -->
+          <div class="wife-col">
+            <div class="wife-line-top" style="background:var(--zilpah)"></div>
+            <div class="wife-card zilpah">
+              <div class="w-emoji">🤱</div>
+              <div class="w-name">질파</div>
+              <div class="w-role">레아의 몸종 · 레아의 아들로 여겨짐</div>
+            </div>
+            <div class="wife-line-bottom" style="background:var(--zilpah)"></div>
+            <div class="sons-col">
+              <div class="son-card zilpah"><span class="son-order">7남</span><span class="son-emoji">🍀</span><div class="son-name">가드</div><div class="son-meaning">다행·행운</div><div class="son-story">다행이로구나!</div></div>
+              <div class="son-card zilpah"><span class="son-order">8남</span><span class="son-emoji">😊</span><div class="son-name">아세르</div><div class="son-meaning">행복</div><div class="son-story">나는 행복하구나!</div></div>
+            </div>
+          </div>
+          <!-- 라헬 -->
+          <div class="wife-col">
+            <div class="wife-line-top" style="background:var(--rachel)"></div>
+            <div class="wife-card rachel">
+              <div class="w-emoji">👸</div>
+              <div class="w-name">라헬</div>
+              <div class="w-role">둘째 아내 · 야곱이 사랑한 아내</div>
+            </div>
+            <div class="wife-line-bottom" style="background:var(--rachel)"></div>
+            <div class="sons-col">
+              <div class="son-card rachel"><span class="son-order">11남</span><span class="son-emoji">🌱</span><div class="son-name">요셉</div><div class="son-meaning">치우다·보태다</div><div class="son-story">수치를 없애 주셨구나, 아들을 더 보태 주소서</div></div>
+              <div class="son-card rachel"><span class="son-order">12남</span><span class="son-emoji">🌟</span><div class="son-name">베냐민</div><div class="son-meaning">오른손의 아들</div><div class="son-story">태어날 때 이름 '벤오니'는 '내 고통의 자식'</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 레아의 아들들 ══ -->
+  <section class="section" id="leah-sec">
+    <div class="mother-section">
+      <div class="mother-header leah fade-up">
+        <span class="mh-emoji">👸</span>
+        <div class="mh-info leah">
+          <div class="mh-name">레아 — 첫째 아내</div>
+          <div class="mh-role">야곱의 본처 · 6아들 1딸(디나) · 라반의 딸</div>
+          <div class="mh-desc">야곱이 원하지 않았지만 라반의 속임으로 먼저 들어온 아내. 눈이 약하고 사랑받지 못한 레아를 하느님께서 먼저 돌보시어 여섯 아들을 주셨습니다. 각 아들의 이름에는 레아의 기도와 눈물이 담겨 있습니다.</div>
+        </div>
+      </div>
+      <div class="sons-grid fade-up">
+        <!-- 르우벤 -->
+        <div class="char-card leah">
+          <div class="char-order">1</div>
+          <span class="char-emoji">👁️</span>
+          <div class="char-name">르우벤</div>
+          <div class="char-hebrew">רְאוּבֵן</div>
+          <span class="char-meaning-tag">보라, 아들이다!</span>
+          <p class="char-story">장남. 이름은 '르우(보라) + 벤(아들)'의 합성어입니다. 레아가 주님의 돌보심을 눈으로 확인하며 외친 감탄과 감사의 이름입니다.</p>
+          <div class="char-quote">"주님께서 나의 괴로움을 보아주셨구나. 이제는 남편이 나를 사랑해 주시겠지." — 창세 29,32</div>
+        </div>
+        <!-- 시므온 -->
+        <div class="char-card leah">
+          <div class="char-order">2</div>
+          <span class="char-emoji">👂</span>
+          <div class="char-name">시므온</div>
+          <div class="char-hebrew">שִׁמְעוֹן</div>
+          <span class="char-meaning-tag">들으셨다</span>
+          <p class="char-story">히브리어 '샤마(שָׁמַע, 듣다)'에서 유래. 하느님께서 레아의 기도와 사랑받지 못하는 고통의 호소를 들으셨다는 고백입니다.</p>
+          <div class="char-quote">"주님께서 내가 사랑받지 못한다는 것을 들으시고 이 아들도 주셨구나." — 창세 29,33</div>
+        </div>
+        <!-- 레위 -->
+        <div class="char-card leah">
+          <div class="char-order">3</div>
+          <span class="char-emoji">🔗</span>
+          <div class="char-name">레위</div>
+          <div class="char-hebrew">לֵוִי</div>
+          <span class="char-meaning-tag">매이다 · 결합</span>
+          <p class="char-story">'라와(לָוָה, 매이다·함께하다)'에서 유래. 레아는 셋째 아들로 마침내 남편의 마음이 자신에게 묶이기를 소망했습니다. 훗날 레위 지파는 성막 제사직을 맡습니다.</p>
+          <div class="char-quote">"이번에는 남편이 나에게 매이겠지. 내가 아들 셋을 낳았으니." — 창세 29,34</div>
+        </div>
+        <!-- 유다 -->
+        <div class="char-card leah">
+          <div class="char-order">4</div>
+          <span class="char-emoji">🎵</span>
+          <div class="char-name">유다</div>
+          <div class="char-hebrew">יְהוּדָה</div>
+          <span class="char-meaning-tag">찬송하다</span>
+          <p class="char-story">'야다(יָדָה, 찬송하다)'에서 유래. 네 번째 아들을 낳으며 레아는 남편의 사랑에 대한 갈망 대신 하느님께 대한 순수한 찬송으로 나아갑니다. 유다 지파에서 다윗과 예수 그리스도가 태어납니다.</p>
+          <div class="char-quote">"이제야말로 내가 주님을 찬송하리라." — 창세 29,35</div>
+        </div>
+        <!-- 이사카르 -->
+        <div class="char-card leah">
+          <div class="char-order">9</div>
+          <span class="char-emoji">🌾</span>
+          <div class="char-name">이사카르</div>
+          <div class="char-hebrew">יִשָּׂשכָר</div>
+          <span class="char-meaning-tag">값 · 갚아주다</span>
+          <p class="char-story">'사카르(שָׂכָר, 삯·갚음)'에서 유래. 레아가 합환채를 라헬에게 주고 야곱과 동침하여 얻은 아들. 하느님께서 내 몸종을 남편에게 준 값을 갚아 주셨다는 감사의 이름입니다.</p>
+          <div class="char-quote">"내 몸종을 남편에게 준 값을 하느님께서 갚아 주셨구나." — 창세 30,18</div>
+        </div>
+        <!-- 즈불룬 -->
+        <div class="char-card leah">
+          <div class="char-order">10</div>
+          <span class="char-emoji">🎁</span>
+          <div class="char-name">즈불룬</div>
+          <div class="char-hebrew">זְבוּלֻן</div>
+          <span class="char-meaning-tag">선물 · 잘 대해 주다</span>
+          <p class="char-story">'자발(זָבַל, 선물을 주다·잘 대해 주다)'에서 유래. 여섯 번째이자 마지막 아들. 아들 여섯을 낳은 레아는 이제 남편이 반드시 자신을 귀히 여길 것이라 확신합니다.</p>
+          <div class="char-quote">"이제는 나의 남편이 나를 잘 대해 주겠지." — 창세 30,20</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 빌하의 아들들 ══ -->
+  <section class="section" id="bilhah-sec">
+    <div class="mother-section">
+      <div class="mother-header bilhah fade-up">
+        <span class="mh-emoji">🤱</span>
+        <div class="mh-info bilhah">
+          <div class="mh-name">빌하 — 라헬의 몸종</div>
+          <div class="mh-role">라헬의 몸종 · 2아들 · 라헬의 아들로 여겨짐</div>
+          <div class="mh-desc">아이를 낳지 못한 라헬이 자신의 몸종 빌하를 야곱에게 주어 대를 잇게 합니다. 두 아들의 이름에는 라헬의 경쟁심과 기도가 담겨 있습니다.</div>
+        </div>
+      </div>
+      <div class="sons-grid fade-up" style="grid-template-columns:repeat(2,1fr)">
+        <!-- 단 -->
+        <div class="char-card bilhah">
+          <div class="char-order">5</div>
+          <span class="char-emoji">⚖️</span>
+          <div class="char-name">단</div>
+          <div class="char-hebrew">דָּן</div>
+          <span class="char-meaning-tag">심판하다 · 권리를 되찾다</span>
+          <p class="char-story">'딘(דִּין, 심판하다·바로 살피다)'에서 유래. 라헬은 오랜 불임의 수치 속에서 하느님께서 자신의 억울함을 바로 살피시고 권리를 회복시켜 주셨다고 고백합니다.</p>
+          <div class="char-quote">"하느님께서 내 사정을 바로 보살피시어 내 말을 들어 주시고, 아들을 주셨구나." — 창세 30,6</div>
+        </div>
+        <!-- 납탈리 -->
+        <div class="char-card bilhah">
+          <div class="char-order">6</div>
+          <span class="char-emoji">🤼</span>
+          <div class="char-name">납탈리</div>
+          <div class="char-hebrew">נַפְתָּלִי</div>
+          <span class="char-meaning-tag">싸움 · 겨루다</span>
+          <p class="char-story">'나프탈(נָפְתַּל, 씨름하다·겨루다)'에서 유래. 자매인 레아와 라헬 사이의 치열한 경쟁이 이름 자체에 새겨졌습니다. 야곱이 야뽁에서 씨름한 '이스라엘'과 같은 어근입니다.</p>
+          <div class="char-quote">"내가 언니와 죽도록 싸워서 이겼다." — 창세 30,8</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 질파의 아들들 ══ -->
+  <section class="section" id="zilpah-sec">
+    <div class="mother-section">
+      <div class="mother-header zilpah fade-up">
+        <span class="mh-emoji">🤱</span>
+        <div class="mh-info zilpah">
+          <div class="mh-name">질파 — 레아의 몸종</div>
+          <div class="mh-role">레아의 몸종 · 2아들 · 레아의 아들로 여겨짐</div>
+          <div class="mh-desc">빌하를 통해 라헬이 아들을 낳자, 레아도 자신의 몸종 질파를 야곱에게 주어 더 많은 아들을 낳게 합니다. 두 아들의 이름은 단순하고 명쾌한 기쁨의 외침입니다.</div>
+        </div>
+      </div>
+      <div class="sons-grid fade-up" style="grid-template-columns:repeat(2,1fr)">
+        <!-- 가드 -->
+        <div class="char-card zilpah">
+          <div class="char-order">7</div>
+          <span class="char-emoji">🍀</span>
+          <div class="char-name">가드</div>
+          <div class="char-hebrew">גָּד</div>
+          <span class="char-meaning-tag">다행 · 행운</span>
+          <p class="char-story">'가드(גָּד, 다행·좋은 운)'에서 유래. 짧고 강렬한 기쁨의 감탄사입니다. 단 두 글자 안에 레아의 안도와 기쁨이 담겨 있습니다. 훗날 가드 지파는 요르단 동편에 정착합니다.</p>
+          <div class="char-quote">"다행이로구나!" — 창세 30,11</div>
+        </div>
+        <!-- 아세르 -->
+        <div class="char-card zilpah">
+          <div class="char-order">8</div>
+          <span class="char-emoji">😊</span>
+          <div class="char-name">아세르</div>
+          <div class="char-hebrew">אָשֵׁר</div>
+          <span class="char-meaning-tag">행복 · 복되다</span>
+          <p class="char-story">'아세르(אָשַׁר, 행복하다·복되다)'에서 유래. 시편의 첫 단어 '아쉐레(행복하여라)'와 같은 어근. 레아는 이제 온전한 행복을 선언합니다. 다른 여인들도 자신을 행복하다 부를 것이라 기대합니다.</p>
+          <div class="char-quote">"나는 행복하구나! 여인들이 나를 행복하다 하리라." — 창세 30,13</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 라헬의 아들들 ══ -->
+  <section class="section" id="rachel-sec">
+    <div class="mother-section">
+      <div class="mother-header rachel fade-up">
+        <span class="mh-emoji">👸</span>
+        <div class="mh-info rachel">
+          <div class="mh-name">라헬 — 둘째 아내</div>
+          <div class="mh-role">야곱이 사랑한 아내 · 2아들 · 요셉과 베냐민의 어머니</div>
+          <div class="mh-desc">야곱이 7년을 며칠처럼 일한 진정한 사랑. 그러나 오랫동안 아이를 낳지 못해 괴로워했습니다. 마침내 요셉을 낳았고, 베냐민을 낳다가 산고로 세상을 떠났습니다.</div>
+        </div>
+      </div>
+      <div class="sons-grid fade-up" style="grid-template-columns:repeat(2,1fr)">
+        <!-- 요셉 -->
+        <div class="char-card rachel">
+          <div class="char-order">11</div>
+          <span class="char-emoji">🌱</span>
+          <div class="char-name">요셉</div>
+          <div class="char-hebrew">יוֹסֵף</div>
+          <span class="char-meaning-tag">치우다 · 보태다</span>
+          <p class="char-story">'아사프(אָסַף, 치우다·거두다)'와 '야사프(יָסַף, 더하다·보태다)' 두 어근이 함께 담겨 있습니다. 수치를 거두어 주심과 동시에 더 많은 것을 바라는 두 겹의 기도입니다. 성조사의 마지막 주인공.</p>
+          <div class="char-quote">"하느님께서 나의 수치를 없애 주셨구나. 주님, 아들을 하나 더 보태 주소서." — 창세 30,23-24</div>
+        </div>
+        <!-- 베냐민 -->
+        <div class="char-card rachel">
+          <div class="char-order">12</div>
+          <span class="char-emoji">🌟</span>
+          <div class="char-name">베냐민</div>
+          <div class="char-hebrew">בִּנְיָמִין</div>
+          <span class="char-meaning-tag">오른손의 아들</span>
+          <p class="char-story">라헬은 죽어가며 '벤오니(בֶּן-אוֹנִי, 내 고통의 자식)'라 불렀습니다. 야곱이 '베냐민(오른손의 아들, 곧 힘과 영광의 아들)'으로 바꾸어 줍니다. 같은 탄생에 두 이름, 어머니의 고통과 아버지의 축복이 함께 새겨졌습니다.</p>
+          <div class="char-quote">라헬이 숨을 거두며: "벤오니(내 고통의 자식)" → 야곱이 바꾸어: "베냐민(오른손의 아들)" — 창세 35,18</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 열두 지파 한눈에 ══ -->
+  <section class="section" id="tribes">
+    <div class="section-header fade-up">
+      <p class="section-kicker">Twelve Tribes</p>
+      <h2>열두 지파 한눈에 — 이름과 뜻</h2>
+    </div>
+    <div class="legend fade-up">
+      <div class="leg-item"><div class="leg-dot leah"></div>레아의 아들</div>
+      <div class="leg-item"><div class="leg-dot bilhah"></div>빌하의 아들 (라헬 대리)</div>
+      <div class="leg-item"><div class="leg-dot zilpah"></div>질파의 아들 (레아 대리)</div>
+      <div class="leg-item"><div class="leg-dot rachel"></div>라헬의 아들</div>
+    </div>
+    <div class="tribe-map fade-up">
+      <div class="tribe-cell leah">   <span class="t-emoji">👁️</span><div class="t-name">르우벤 ①</div><div class="t-meaning">보라, 아들이다</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">👂</span><div class="t-name">시므온 ②</div><div class="t-meaning">들으셨다</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">🔗</span><div class="t-name">레위 ③</div><div class="t-meaning">매이다</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">🎵</span><div class="t-name">유다 ④</div><div class="t-meaning">찬송하다</div></div>
+      <div class="tribe-cell bilhah"> <span class="t-emoji">⚖️</span><div class="t-name">단 ⑤</div><div class="t-meaning">심판하다</div></div>
+      <div class="tribe-cell bilhah"> <span class="t-emoji">🤼</span><div class="t-name">납탈리 ⑥</div><div class="t-meaning">싸움·겨루다</div></div>
+      <div class="tribe-cell zilpah"> <span class="t-emoji">🍀</span><div class="t-name">가드 ⑦</div><div class="t-meaning">다행·행운</div></div>
+      <div class="tribe-cell zilpah"> <span class="t-emoji">😊</span><div class="t-name">아세르 ⑧</div><div class="t-meaning">행복</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">🌾</span><div class="t-name">이사카르 ⑨</div><div class="t-meaning">값·갚아주다</div></div>
+      <div class="tribe-cell leah">   <span class="t-emoji">🎁</span><div class="t-name">즈불룬 ⑩</div><div class="t-meaning">선물·잘 대해 주다</div></div>
+      <div class="tribe-cell rachel"> <span class="t-emoji">🌱</span><div class="t-name">요셉 ⑪</div><div class="t-meaning">치우다·보태다</div></div>
+      <div class="tribe-cell rachel"> <span class="t-emoji">🌟</span><div class="t-name">베냐민 ⑫</div><div class="t-meaning">오른손의 아들</div></div>
+    </div>
+  </section>
+
+  <div class="return-panel fade-up">
+    <a class="return-link" href="index.html"><span>←</span> 창세기 시리즈 목차로 돌아가기</a>
+  </div>
+  <footer class="footer">
+    <strong>창세기 9과 — 야곱의 열 두 아들</strong>
+    <span>청년성서모임 궁금증 · © 2026</span>
+  </footer>
+</main>
+
+<button class="back-to-top" id="back-top" aria-label="맨 위로">↑</button>
+
+<script>
+(function(){
+  'use strict';
+  const bar = document.getElementById('progress-bar');
+  const backTop = document.getElementById('back-top');
+  const themeBtn = document.getElementById('theme-toggle');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('.section[id]');
+  const faders = document.querySelectorAll('.fade-up');
+
+  function updateBar(){
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = max > 0 ? (window.scrollY/max*100)+'%' : '0%';
+  }
+  function updateBackTop(){ backTop.classList.toggle('visible', window.scrollY > 400); }
+  backTop.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+
+  function updateNav(){
+    let cur = '';
+    sections.forEach(s=>{ if(window.scrollY >= s.offsetTop - 100) cur = s.id; });
+    navLinks.forEach(a=> a.classList.toggle('active', a.getAttribute('href')==='#'+cur));
+  }
+
+  const saved = localStorage.getItem('theme');
+  if(saved) document.documentElement.setAttribute('data-theme', saved);
+  if(saved==='dark') themeBtn.textContent = '☀︎';
+  themeBtn.addEventListener('click', ()=>{
+    const isDark = document.documentElement.getAttribute('data-theme')==='dark';
+    const next = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    themeBtn.textContent = isDark ? '☾' : '☀︎';
+  });
+
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }});
+  },{threshold:0.08, rootMargin:'0px 0px -5% 0px'});
+  faders.forEach(f=> obs.observe(f));
+
+  window.addEventListener('scroll', ()=>{ updateBar(); updateBackTop(); updateNav(); },{passive:true});
+  updateBar(); updateBackTop();
+})();
+</script>
+</body>
+</html>
+
